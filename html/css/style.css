@@ -196,7 +196,7 @@ main{
     width: 55%;
     margin: 0 auto;
 }
-/* 공연예매 캘린더 */
+/* 티켓예매 캘린더 */
 .calendar{
     padding: 100px;
     color: #fff;
@@ -210,62 +210,66 @@ main{
     font-weight: 700;
     margin: 0 20px;
 }
-.month{
+/* .month{
     display: flex;
     justify-content: space-between;
     margin: 0 1.7em;
-}
-.month-tabs{
+} */
+.month-tabs {
     display: flex;
+    margin: 0 30px;
 }
 .month-tabs li{
     padding: 0px 1em;
+}
+.month-tabs li:nth-child(8){
+    background: #ffb701;
+}
+.month-tabs li:nth-child(8) button{
+    color: #000;
+    font-weight: 700;
+}
+.month-tabs li button{
     font-size: 16px;
     color: #9d9d9d;
     line-height: 55px;
     vertical-align: baseline;
-    cursor: pointer;
+    background: none;
 }
-.month-tabs li:nth-child(8){
-    background: #ffb701;
-    color: #000;
-    font-weight: 700;
-}
-.month .swiper-btns{
+.month .move-btns{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 10%;
 }
-.month .swiper-btns a{
+.month .move-btns a{
 
 }
-.month .swiper-btns a:last-child{
+.month .move-btns a:last-child{
 }
-.month .swiper-btns img{
+.month .move-btns img{
     width: 28px;
 }
-/* 날짜별 티켓 예매 */
-.day-list{
+
+.tab-panels{
     margin: 30px 0;
     line-height: 50px;
 }
-.day-box{
+.day-list{
     display: flex;
     /* padding: 10px 50px; */
     margin: 0 30px;
     border-bottom: 1px solid #9d9d9d;
 }
-.day-box:hover {
+.day-list:hover {
     background-color: #ffb701;
     color: #000;
-
 }
-.day-box:hover .date span{
+.day-list:hover .date span{
     color: #000;
     font-weight: 700;
 }
-.day-box .date span{
+.day-list .date span{
     /* font-family: "Montserrat", sans-serif; */
     /* font-family: "Red Hat Display", sans-serif; */
     font-family: 'Noto Sans KR', sans-serif;
@@ -276,30 +280,30 @@ main{
     font-size: 1.3rem;
     font-weight: 400;
 }
-.day-box .date span:first-child{
+.day-list .date span:first-child{
     margin-right: 20px;
 }
-.day-box .date span:last-child{
+.day-list .date span:last-child{
     font-weight: 300;
 }
-.day-box:hover .date span:last-child{
+.day-list:hover .date span:last-child{
     font-weight: 500;
 }
 /* 공연 제목 */
-.day-box .playttl{
+.day-list .playttl{
     flex-grow: 2;
     text-align: center;
 }
-.day-box .playttl a{
+.day-list .playttl a{
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
     padding: 0 5px;
 }
-.day-box .book-btn img{
+.day-list .book-btn img{
     width: 39px;
 }
-.day-box:hover .playttl a{
+.day-list:hover .playttl a{
     color: #000;
     font-weight: 600;
     border-bottom: 1.5px solid #000;
@@ -308,10 +312,10 @@ main{
 .book-btn img.black{
     display: none;   
 }
-.day-box:hover img.white{
+.day-list:hover img.white{
     display: none;
 }
-.day-box:hover img.black{
+.day-list:hover img.black{
     display: inline-block;
 }
 
