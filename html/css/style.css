@@ -362,6 +362,170 @@ main{
     margin: 0 auto 20px;
     width: 55px;
 }
+
+/* 인포 */
+#info {    width: 100%;
+    margin: 150px 0; 
+}
+#info .info_inr {
+    width: 100%;
+    display: flex;
+}
+
+.info_inr .n_list {  width: 85%; 
+}
+.info_inr ul {display: flex;}
+.info_inr .n_list li {
+    width: 30%; height: 435px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    position: relative;
+}
+
+.info_inr .notice {
+    width: 15%;
+    padding-top: 84px;
+}
+.info_inr .notice h4 {color: #1A1A1A;text-align: left;
+    font-family:'Montserrat';
+    font-weight: 700; font-size: 37px;
+    margin-top: 28px;
+}
+.info_inr .notice > div {
+    /* background: #00203d; border-radius: 50%;  */
+padding-top: 17px;}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.eBhLyM_ {
+    height: 25px;
+    width: 100%;
+    /* display: inline-block; */
+}
+.eBuayz_ {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    transition: width 1s ease 0s;
+}
+.khpWsc_ {
+    background-color:  #00203d;
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 1px;
+}
+.eBuayz_ svg:last-child {
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 4px 0px 4px 15px;
+}
+
+.iCbSga_ {
+    width: 100%;
+    color:  #00203d;
+    /* z-index: 1;
+    min-height: 280px;
+    flex: 0 0 auto;
+    display: block; */
+    max-width: 160px;
+    padding-top: 39px; padding-bottom:38px;
+}
+.hqMvbG_ {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+}
+.iCbSga_:hover .ArrowDazzlerAnimate {
+    width: 100%;}
+#info .day {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin:43px 0px 10px 45px;
+
+}
+
+#info .day .a {
+    font-family: 'Montserrat';
+    font-size: 50px; font-weight: 600;
+    color: #111;
+    margin-right: 10px;
+}
+#info .day .b {
+    font-family: 'Arimo';
+    font-size: 20px; 
+    line-height: 1em;
+    color: #111;
+}
+
+#info .txt {
+    margin: 0 35px;
+}
+
+#info .txt .cont {
+    font-size: 24px;
+    font-family: 'Noto Sans KR';
+    position: relative;
+    padding-top:60px;
+    padding-left:15px;font-weight: 300;
+}
+.deco-bar:before {
+    content: '';
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 0px; left: 0;
+}
+#info .txt .cont p {
+  
+    color: #111;
+}
+#info .n_btn {
+position: absolute;
+bottom: 20px;
+right: 20px;
+
+}
+#info .n_btn:hover {}
+#info .n_btn img {
+    padding: 18px;background: #00203d;
+}
+
+/* #info .n_list li:last-child {width: 200px; border: none; background: #ebebeb; 
+}
+#info li .add {text-align: center; background: #ebebeb; 
+    padding: 40px 0;
+   }
+#info .add a {color: #111; font-size: 28px; font-family: 'Montserrat';
+    font-weight: 300;
+} */
+#info .more
+{ position: relative;}
+.under_bar:before {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    background: #111;
+    position: absolute;
+    top: 81px;
+    left: 43px;
+}
+
 /* 게시판(공지사항/티켓오픈) */
 #board{
     width: 100%;
