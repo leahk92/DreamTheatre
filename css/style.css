@@ -190,13 +190,13 @@ main{
 
 /* 본문1 */
 .section01{
-    background: black;
+    /* background: black; */
 }   
 .section01 > .container{
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
 }
-/* 티켓예매 캘린더 */
+/* 프로덕션 & 캘린더 */
 .calendar{
     padding: 100px;
     color: #fff;
@@ -330,20 +330,20 @@ main{
     display: flex;
     width: 100%;
 } */
+
 /* 주요 서비스 - 아이콘 형식*/
 .service{
     width: 100%;
-    margin: 60px auto;
+    margin: 100px auto;
 }
 .service ul{
     display: flex;
     justify-content: center;
 }
 .service ul:last-child{
-    border-right: none;
 }
 .service ul li{
-    width: 250px;
+    width: 200px;
     margin: 0 5px;
 }
 .service li a{
@@ -352,20 +352,17 @@ main{
     font-size: 1.2rem;
     font-weight: 500;
     color: #000;
-    padding:  50px 40px;
-    /* background-color: #f1f1f1; */
-    border: 1px solid #d2d2d2;
-    border-radius: 30px;
 }
 .service li img{
     display: block;
     margin: 0 auto 20px;
-    width: 55px;
+    width: 45px;
 }
 
 /* 인포 */
-#info {    width: 100%;
-    margin: 150px 0; 
+#info {
+    width: 100%;
+    margin: 100px auto;
 }
 #info .info_inr {
     width: 100%;
@@ -600,11 +597,11 @@ right: 20px;
 }
 /* 회원 서비스 - 카드 형식 */
 .cardArea{
-    padding: 100px 0;
     display: flex;
     gap: 0.5%;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 /* 회원 서비스 - 카드 형식 */
  .card{
@@ -619,6 +616,7 @@ right: 20px;
     width: 400px;
     border-radius: 3px;    
     object-fit: cover;
+    filter: brightness(35%);
 }
 .textBox{
     height: 70px;

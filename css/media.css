@@ -5,9 +5,9 @@
 /* 화면너비 1920px */
 @media (max-width:1920px) {
     /* 학교 컴퓨터 : 80% */
-    .section01 > .container {
+    /* .section01 > .container {
         width: 80%;
-    }
+    } */
     .day-list{
         padding: 15px 65px;
     }
@@ -15,9 +15,9 @@
 /* 화면너비 1680px */
 @media (max-width:1680px) {
     /* 레노버 : 85% */
-    .section01 > .container {
+    /* .section01 > .container {
         width: 85%;
-    }
+    } */
     .day-list{
         padding: 15px 65px;
     }
