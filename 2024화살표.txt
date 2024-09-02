@@ -1,0 +1,31 @@
+            <!-- 프로덕션 & 캘린더 -->
+            <div class="overviewNavi">
+                <div class="overview-tab">
+                    <button><i class="fa-solid fa-masks-theater"></i>프로덕션</button>
+                    <button><i class="fa-regular fa-calendar"></i>캘린더</button>
+                </div>
+                <div class="overview-move">
+                    <!-- <p>2024</p>
+                    <button><img src="./image/prev-white.png" alt=""></button>
+                    <button><img src="./image/next-white.png" alt=""></button> -->
+                </div>
+            </div>
+
+.overview-move{
+    display: flex;
+}
+.overviewNavi .overview-move p {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    align-content: center;
+    margin-right: 20px;
+}
+.overviewNavi .overview-move button{
+    padding: 10px;
+    background: #000;
+    border-right: 1px solid #fff;
+}
+.overview-move img{
+    width: 30px;
+}

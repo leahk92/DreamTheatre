@@ -6,16 +6,17 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+header, main, section, footer{
+    width: 100%;    
+}
+
+/* 랜딩 페이지 */
 #landing-wrap{
     width: 100%;
     height: 100vh;
     /* overflow-y: scroll; */
     /* scroll-snap-type: y mandatory; */
 }
-header, main, section, footer{
-    width: 100%;    
-}
-
 /* 헤더 */
 header{
     display: flex;
@@ -69,9 +70,7 @@ nav .menu-bar a{
 .icon-bar img{
     width: 30px;
 }
-
 /* 메인 */
-/* 시즌라인업 */
 main{
     height: 100%;
     /* background: linear-gradient(45deg, Violet, Orange); */
@@ -80,161 +79,76 @@ main{
     height: 100vh;
     display: flex;
     align-items: center;
-}
-
-.season{
-    width: 40%;
-}
-.season h2{
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    opacity: 0;
-    animation: showcontent 1s ease-in-out 1 forwards;
-}
-.season h3{
-    margin-top: 5px;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 500;
-    font-weight: 800;
-    font-size: 50px;
-    opacity: 0;
-    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
-
-}
-.arrow{
-    display: block;
-    margin-top: 100px;
-    opacity: 0;
-    animation: showcontent 1s ease-in-out 0.6s 1 forwards;
-}
-.arrow img{
-    width: 270px;
-}
-@keyframes showcontent {
-    from{
-        opacity: 0;
-        transform: translate(0, 100px);
-        filter: blur(33px);
-    } to{
-        opacity: 1;
-        transform: translate(0,0);
-        filter: blur(0);
-    }  
-}
-/* 공연리스트 슬라이더 */
-/* 6분33초 */
-.card-container{
-    overflow: hidden;
-    position: relative;
-    padding: 50px;
-}
-#slide{
-    /* display: flex; */
-    /* align-items: center; */
-    width: max-content;   
-}
-#slide .item{
-    width: 400px;
-    display: inline-block;
-    margin-right: 25px;
-    transition: 0.5s;
-    box-shadow: 0 30px 50px #505050;
-}
-#slide .poster{
-    overflow: hidden;
-}
-#slide .poster img{
-    /* width: 400px; */
-    width: 100%;
-    display: block;
-    transition: transform 0.5s;
-
-}
-#slide .poster:hover img {
-    transform: scale(1.1);
-}
-
-#slide .des{
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-}
-#slide .des p{
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-#slide .des span{
-    font-size: 1.2rem;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 500;
-    color: #888;
-}
-.buttons{
-    position: absolute;
-    right: 5%; top: 50%;
-    z-index: 22222;
-    text-align: center;
-}
-.buttons button{
-    width: 50px;height: 50px;
-    border-radius: 50%;
-    border: 1px solid #555;
-    transition: 0.5s;
-}
-.buttons button:hover{
-    background-color: #10101c;
-    color: #fff;
+    background-color: rgb(255, 213, 208);
 }
 
 /* 본문1 */
 .section01{
-    /* background: black; */
-}   
-.section01 > .container{
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
-}
+}   
 /* 프로덕션 & 캘린더 */
-.calendar{
-    padding: 100px;
-    color: #fff;
-}
-.yearMonth{
-    padding: 10px 20px;
-    border-bottom: 1px solid #9d9d9d;
-    font-size: 2rem;
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 700;
-    margin: 0 20px;
-}
-/* .month{
+.overviewNavi{
     display: flex;
     justify-content: space-between;
-    margin: 0 1.7em;
-} */
+    align-items: center;
+    padding: 30px 150px;
+}
+.overviewNavi .overview-tab i{
+    margin-right: 10px;
+}
+.overviewNavi .overview-tab button{
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 30px;
+}
+.overview-filter{
+    display: flex;
+}
+.overviewNavi .overview-filter button{
+    margin: 0 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #767676;
+}
+
+.calendar{
+    color: #fff;
+    background-color: #1D1D1D;
+}
+.monthNavi{
+    display: flex;
+    /* padding: 0 100px; */
+    justify-content: space-between;
+    border-bottom: 1px solid #9d9d9d;
+}
+.monthNavi > p{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    align-content: center;
+    margin: 0 auto;
+}
+.monthNavi .arr img{
+    width: 25px;
+}
 .month-tabs {
     display: flex;
-    margin: 0 30px;
+    justify-content: space-around;
+}
+.month-tabs li:first-child{
+    border-left: 1px solid #fff;
 }
 .month-tabs li{
-    padding: 0px 1em;
-}
-.month-tabs li:nth-child(8){
-    background: #ffb701;
-}
-.month-tabs li:nth-child(8) button{
-    color: #000;
-    font-weight: 700;
+    border-right: 1px solid #fff;
 }
 .month-tabs li button{
-    font-size: 16px;
-    color: #9d9d9d;
-    line-height: 55px;
-    vertical-align: baseline;
-    background: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 75px;
+    padding: 0 40px;
+
 }
 .month .move-btns{
     display: flex;
@@ -250,10 +164,9 @@ main{
 .month .move-btns img{
     width: 28px;
 }
-
 .tab-panels{
-    margin: 30px 0;
     line-height: 50px;
+    background-color: #1D1D1D;
 }
 .day-list{
     display: flex;

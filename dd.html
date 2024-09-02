@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
-    <!-- 랜딩 페이지 -->
     <div id="landing-wrap">
         <!-- 헤더 -->
         <header>
@@ -40,6 +39,66 @@
         <!-- 메인 비주얼 -->
         <main>
             <div id="main-wrap">
+                <!-- 시즌라인업 -->
+                <div class="season">
+                    <h2>SEASON<br>LINEUP</h2>
+                    <h3 class="year">2024</h3>
+                    <a class="arrow" href=""><img src="./image/arrow.png" alt=""></a>
+                </div>
+                <!-- 공연리스트 슬라이더 -->
+                <div class="card-container">
+                    <div id="slide">
+                        <a href="#" class="item">
+                            <div class="poster">
+                                <img src="./image/tosca.jfif" alt="" class="img" id="img1">
+                            </div>
+                            <div class="des">
+                                <p>토스카1</p>
+                                <span>08.09 - 08.11</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="poster">
+                                <img src="./image/tosca.jfif" alt="" class="img" id="img1">
+                            </div>
+                            <div class="des">
+                                <p>토스카2</p>
+                                <span>08.09 - 08.11</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="poster">
+                                <img src="./image/tosca.jfif" alt="" class="img" id="img1">
+                            </div>
+                            <div class="des">
+                                <p>토스카3</p>
+                                <span>08.09 - 08.11</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="poster">
+                                <img src="./image/tosca.jfif" alt="" class="img" id="img1">
+                            </div>
+                            <div class="des">
+                                <p>토스카4</p>
+                                <span>08.09 - 08.11</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item">
+                            <div class="poster">
+                                <img src="./image/tosca.jfif" alt="" class="img" id="img1">
+                            </div>
+                            <div class="des">
+                                <p>토스카5</p>
+                                <span>08.09 - 08.11</span>
+                            </div>
+                        </a>        
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div> 
             </div>
         </main>
         <!-- //메인 비주얼 -->
@@ -47,27 +106,14 @@
         <!-- 본문 -->
         <!-- 섹션1 -->        
         <section class="section01">
-            <!-- 프로덕션 & 캘린더 -->
-            <div class="overviewNavi">
-                <div class="overview-tab">
-                    <button><i class="fa-solid fa-masks-theater"></i>프로덕션</button>
-                    <button><i class="fa-regular fa-calendar"></i>캘린더</button>
+            <div class="container"> 
+                <!-- 프로덕션 & 캘린더 -->
+                <div class="overviewNavi">
+                    <button>프로덕션</button>
+                    <button>캘린더</button>
                 </div>
-                <div class="overview-filter">
-                    <button>뮤지컬</button>
-                    <button>콘서트</button>
-                    <button>연극</button>
-                    <button>무용</button>
-                    <button>프로그램</button>
-                    <button>기타</button>
-                    <!-- <p>2024</p>
-                    <button><img src="./image/prev-white.png" alt=""></button>
-                    <button><img src="./image/next-white.png" alt=""></button> -->
-                </div>
-            </div>
-            <div class="calendar">
-                <div class="monthNavi">
-                    <p>2024</p>
+                <div class="calendar">
+                    <div class="yearMonth">2024.08</div>
                     <ul class="month-tabs" role="tablist" aria-labelledby="month-name">
                         <li><button id="tab-1"  role="tab" aria-controls="tabPanel-1"  aria-selected="true"> 1월 </button></li>
                         <li><button id="tab-2"  role="tab" aria-controls="tabPanel-2"  aria-selected="false">2월 </button></li>
@@ -81,136 +127,187 @@
                         <li><button id="tab-10" role="tab" aria-controls="tabPanel-10" aria-selected="false">10월</button></li>
                         <li><button id="tab-11" role="tab" aria-controls="tabPanel-11" aria-selected="false">11월</button></li>
                         <li><button id="tab-12" role="tab" aria-controls="tabPanel-12" aria-selected="false">12월</button></li>
-                        <li><button class="arr"><img src="./image/prev-white.png" alt=""></button></li>
-                        <li><button class="arr"><img src="./image/next-white.png" alt=""></button></li>
                     </ul>
-                    <!-- <div class="arr">
-                        <button><img src="./image/prev-white.png" alt=""></button>
-                        <button><img src="./image/next-white.png" alt=""></button>
-                    </div> -->
-                </div>
-                <div class="tab-panels">
-                    <ul id="tabPanel-1" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-2" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-3" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-4" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-5" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-6" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-6">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-7" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-7">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-8" role="tabpanel" tabindex="0" aria-labelledby="tab-8">
-                        <li class="day-list">
-                            <div class="date">
-                                <span>08-09</span>
-                                <span>20:00(금)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
-                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="day-list">
-                            <div class="date">
-                                <span>08-10</span>
-                                <span>14:00(토)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
-                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="day-list">
-                            <div class="date">
-                                <span>08-10</span>
-                                <span>19:00(토)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
-                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="day-list">
-                            <div class="date">
-                                <span>08-11</span>
-                                <span>14:00(일)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
-                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="day-list">
-                            <div class="date">
-                                <span>08-11</span>
-                                <span>19:00(일)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
-                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-9" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-9">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-10" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-10">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-11" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-11">
-                        <li class="day-list">
-                        </li>
-                    </ul>
-                    <ul id="tabPanel-12" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-12">
-                        <li class="day-list">
-                        </li>
-                    </ul>
+                    <div class="tab-panels">
+                        <ul id="tabPanel-1" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-2" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-3" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-4" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-5" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-6" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-6">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-7" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-7">
+                            <li class="day-list">
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-8" role="tabpanel" tabindex="0" aria-labelledby="tab-8">
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-9" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-9">
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-10" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-10">
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-11" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-11">
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul id="tabPanel-12" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-12">
+                            <li class="day-list">
+                                <div class="date">
+                                    <span>08-11</span>
+                                    <span>18:30(일)</span>
+                                </div>
+                                <div class="playttl">
+                                    <a href="#">더매직스타 TOP7 전국투어 매직쇼 - 부산</a>
+                                </div>
+                                <div class="book-btn">
+                                    <a href="#">
+                                        <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                        <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="move-btns">
+                        <a href="#"><img src="./image/prev-white.png" alt=""></a>              
+                        <a href="#"><img src="./image/cal-white.png" alt=""></a>              
+                        <a href="#"><img src="./image/next-white.png" alt=""></a>              
+                    </div>
                 </div>
             </div>
         </section>
