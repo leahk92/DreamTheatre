@@ -15,11 +15,13 @@
 /* 화면너비 1680px */
 @media (max-width:1680px) {
     /* 레노버 : 85% */
-    /* .section01 > .container {
-        width: 85%;
-    } */
-    .day-list{
-        padding: 15px 65px;
+    .month-tabs li button{
+        font-size: 1.1rem;
+        /* line-height: 75px; */
+        padding: 0 30px;
+    }
+    .monthNavi .arr img {
+        width: 20px;
     }
 }
 /* 화면너비 1440px */
