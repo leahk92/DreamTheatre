@@ -49,10 +49,10 @@
         <section class="section01">
             <!-- 프로덕션 & 캘린더 -->
             <div class="overviewNavi">
-                <div class="overview-tab">
+                <h2 class="overview-tab">
                     <button><i class="fa-solid fa-masks-theater"></i>프로덕션</button>
                     <button><i class="fa-regular fa-calendar"></i>캘린더</button>
-                </div>
+                </h2>
                 <div class="overview-filter">
                     <button>뮤지컬</button>
                     <button>콘서트</button>
@@ -69,23 +69,23 @@
                 <div class="monthNavi">
                     <p>2024</p>
                     <ul class="month-tabs" role="tablist" aria-labelledby="month-name">
-                        <li><button id="tab-1"  role="tab" aria-controls="tabPanel-1"  aria-selected="true"> 1월 </button></li>
-                        <li><button id="tab-2"  role="tab" aria-controls="tabPanel-2"  aria-selected="false">2월 </button></li>
-                        <li><button id="tab-3"  role="tab" aria-controls="tabPanel-3"  aria-selected="false">3월 </button></li>
-                        <li><button id="tab-4"  role="tab" aria-controls="tabPanel-4"  aria-selected="false">4월 </button></li>
-                        <li><button id="tab-5"  role="tab" aria-controls="tabPanel-5"  aria-selected="false">5월 </button></li>
-                        <li><button id="tab-6"  role="tab" aria-controls="tabPanel-6"  aria-selected="false">6월 </button></li>
-                        <li><button id="tab-7"  role="tab" aria-controls="tabPanel-7"  aria-selected="false">7월 </button></li>
-                        <li><button id="tab-8"  role="tab" aria-controls="tabPanel-8"  aria-selected="false">8월 </button></li>
-                        <li><button id="tab-9"  role="tab" aria-controls="tabPanel-9"  aria-selected="false">9월 </button></li>
-                        <li><button id="tab-10" role="tab" aria-controls="tabPanel-10" aria-selected="false">10월</button></li>
-                        <li><button id="tab-11" role="tab" aria-controls="tabPanel-11" aria-selected="false">11월</button></li>
-                        <li><button id="tab-12" role="tab" aria-controls="tabPanel-12" aria-selected="false">12월</button></li>
-                        <li><button class="arr"><img src="./image/prev-white.png" alt=""></button></li>
-                        <li><button class="arr"><img src="./image/next-white.png" alt=""></button></li>
+                        <li><button id="tab-1"  role="tab" aria-controls="tabPanel-1"  aria-selected="true"> <span>1</span> 월</button></li>
+                        <li><button id="tab-2"  role="tab" aria-controls="tabPanel-2"  aria-selected="false"><span>2</span> 월</button></li>
+                        <li><button id="tab-3"  role="tab" aria-controls="tabPanel-3"  aria-selected="false"><span>3 </span>월</button></li>
+                        <li><button id="tab-4"  role="tab" aria-controls="tabPanel-4"  aria-selected="false"><span>4 </span>월</button></li>
+                        <li><button id="tab-5"  role="tab" aria-controls="tabPanel-5"  aria-selected="false"><span>5 </span>월</button></li>
+                        <li><button id="tab-6"  role="tab" aria-controls="tabPanel-6"  aria-selected="false"><span>6 </span>월</button></li>
+                        <li><button id="tab-7"  role="tab" aria-controls="tabPanel-7"  aria-selected="false"><span>7 </span>월</button></li>
+                        <li><button id="tab-8"  role="tab" aria-controls="tabPanel-8"  aria-selected="false"><span>8 </span>월</button></li>
+                        <li><button id="tab-9"  role="tab" aria-controls="tabPanel-9"  aria-selected="false"><span>9 </span>월</button></li>
+                        <li><button id="tab-10" role="tab" aria-controls="tabPanel-10" aria-selected="false"><span>10</span>월</button></li>
+                        <li><button id="tab-11" role="tab" aria-controls="tabPanel-11" aria-selected="false"><span>11</span>월</button></li>
+                        <li><button id="tab-12" role="tab" aria-controls="tabPanel-12" aria-selected="false"><span>12</span>월</button></li>
+                        <li><button class="arr"><img src="./image/prev.png" alt=""></button></li>
+                        <li><button class="arr"><img src="./image/next.png" alt=""></button></li>
                     </ul>
                 </div>
-                <div class="tab-panels-1 ">
+                <div class="tab-panels-1 hidden">
                     <ul class="boxView">
                         <li>
                             <a class="poster" href="">
@@ -93,7 +93,17 @@
                                 <div>
                                     <p>Musical</p>
                                     <p>레미제라블</p>
-                                    <p>0809 - 0811</p>
+                                    <p>0809 - 081 1</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="poster" href="">
+                                <img src="./image/phantom.jpg" alt="">
+                                <div>
+                                    <p>Musical</p>
+                                    <p>오페라의 유령</p>
+                                    <p>0809 - 081 1</p>
                                 </div>
                             </a>
                         </li>
@@ -103,23 +113,13 @@
                                 <div>
                                     <p>Musical</p>
                                     <p>영웅</p>
-                                    <p>0809 - 0811</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="poster" href="">
-                                <img src="./image/playRED.jpg" alt="">
-                                <div>
-                                    <p>Musical</p>
-                                    <p>영웅</p>
-                                    <p>0809 - 0811</p>
+                                    <p>0809 - 081 1</p>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="tab-panels-2 hidden">
+                <div class="tab-panels-2 ">
                     <ul id="tabPanel-1" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
                         <li class="day-list">
                         </li>
@@ -150,79 +150,80 @@
                     </ul>
                     <ul id="tabPanel-8" role="tabpanel" tabindex="0" aria-labelledby="tab-8">
                         <li class="day-list">
-                            <div class="date">
-                                <span>08-09</span>
-                                <span>20:00(금)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
+                            <a href="">
+                                <div class="date">
+                                    <p>08-09</p>
+                                    <p>20:00 (토)</p>
+                                </div>
+                                <div class="playttl">
+                                    <p>뮤지컬 <레미제라블></p>
+                                </div>
+                                <div class="book-btn">
                                     <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
                                     <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="day-list">
+                            <a href="">
+                                <div class="date">
+                                    <p>08-10</p>
+                                    <p>14:00 (토)</p>
+                                </div>
+                                <div class="playttl">
+                                    <p>뮤지컬 <레미제라블></p>
+                                </div>
+                                <div class="book-btn">
+                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
+                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                                </div>
+                            </a>
                         </li>
                         <li class="day-list">
-                            <div class="date">
-                                <span>08-10</span>
-                                <span>14:00(토)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
+                            <a href="">
+                                <div class="date">
+                                    <p>08-10</p>
+                                    <p>19:00 (토)</p>
+                                </div>
+                                <div class="playttl">
+                                    <p>뮤지컬 <레미제라블></p>
+                                </div>
+                                <div class="book-btn">
                                     <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
                                     <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                         <li class="day-list">
-                            <div class="date">
-                                <span>08-10</span>
-                                <span>19:00(토)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
+                            <a href="">
+                                <div class="date">
+                                    <p>08-11</p>
+                                    <p>14:00 (일)</p>
+                                </div>
+                                <div class="playttl">
+                                    <p>뮤지컬 <레미제라블></p>
+                                </div>
+                                <div class="book-btn">
                                     <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
                                     <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                         <li class="day-list">
-                            <div class="date">
-                                <span>08-11</span>
-                                <span>14:00(일)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
+                            <a href="">
+                                <div class="date">
+                                    <p>08-11</p>
+                                    <p>19:00 (일)</p>
+                                </div>
+                                <div class="playttl">
+                                    <p>뮤지컬 <레미제라블></p>
+                                </div>
+                                <div class="book-btn">
                                     <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
                                     <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="day-list">
-                            <div class="date">
-                                <span>08-11</span>
-                                <span>19:00(일)</span>
-                            </div>
-                            <div class="playttl">
-                                <a href="#">뮤지컬 <레미제라블> - 부산</a>
-                            </div>
-                            <div class="book-btn">
-                                <a href="#">
-                                    <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                    <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <ul id="tabPanel-9" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-9">
@@ -246,102 +247,78 @@
         </section>
         <!-- 섹션2 -->
         <section class="section02">
-            <div class="container">
-                <!-- 주요 서비스 - 아이콘 형식 -->
-                <div class="service">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="./image/오시는길.png" alt="오시는길 이미지">오시는 길</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./image/주차안내.png" alt="주차안내 이미지">주차안내</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./image/예매안내.png" alt="예매안내 이미지">예매안내</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./image/예매확인.png" alt="예매확인 이미지">예매확인</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./image/좌석배치도.png" alt="좌석배치도 이미지">좌석배치도</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./image/FAQ.png" alt="FAQ 이미지">FAQ</a>
-                        </li>
-                    </ul>
-                </div>                
-                <!-- 인포 -->
-                <div id="container">
-                    <div id="info">
-                        <div class="info_inr">
-                            <div class="n_list">
-                                <ul>
-                                    <li>
-                                        <div class="day">
-                                        <p class="a">16</p>
-                                        <p class="b">8월<br>2024</p> 
-                                        </div>
-                                        <div class="txt">
-                                            <div class="cont deco-bar">
-                                            <a href="#"><p>오페라글라스 대여가격 인상 안내</p></a>
-                                            </div>
-                                        </div>
-                                        <div class="n_btn">
-                                            <a href="#"><img src="./image/info_arr_white_.png" alt=""></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="day">
-                                            <p class="a">16</p>
-                                            <p class="b">8월<br>2024</p> 
-                                        </div>
-                                        <div class="txt">
-                                            <div class="cont deco-bar">
-                                                <a href="#"><p>2024 드림씨어터 라인업 안내</p></a>
-                                            </div>
-                                        </div>
-                                        <div class="n_btn">
-                                            <a href="#"><img src="./image/info_arr_white_.png" alt=""></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="day">
-                                            <p class="a">01</p>
-                                            <p class="b">6월<br>2023</p> 
-                                        </div>
-                                        <div class="txt">
-                                            <div class="cont deco-bar">
-                                            <a href="#"><p>드림씨어터 2024년 대관료 및 대관 세부 사항 변경 안내</p></a>
-                                            </div>
-                                        </div>
-                                        <div class="n_btn">
-                                            <a href="#"><img src="./image/info_arr_white_.png" alt=""></a>
-                                        </div>                           
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="notice">
-                                <a data-roh="homepage-tray-HIGHLIGHTS-card-0" href="#" class="o9thgt-0 gbPCMV_">
-                                    <div class="iCbSga_">
-                                        <div class="hqMvbG_">
-                                            <span color="#c8102e" class="sc-1saaysz-0 eBhLyM_">
-                                                <span class="sc-1saaysz-1 eBuayz_ ArrowDazzlerAnimate"
-                                                    data-roh="eventArrow">
-                                                    <span color="#c8102e" class="sc-1saaysz-2 khpWsc_"></span>
-                                                    <svg x="0px" y="0px" viewBox="0 0 23 42">
-                                                        <path fill="#00203d"
-                                                            d="m 18.1,22.2 v 0 -2.5 0 L 0,1.8 1.8,0 23,20.9 1.8,41.8 0,40 Z">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </div>
+            <!-- 주요 서비스 - 아이콘 형식 -->
+            <div class="service">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./image/오시는길.png" alt="오시는길 이미지">오시는 길</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/주차안내.png" alt="주차안내 이미지">주차안내</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/예매안내.png" alt="예매안내 이미지">예매안내</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/예매확인.png" alt="예매확인 이미지">예매확인</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/좌석배치도.png" alt="좌석배치도 이미지">좌석배치도</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/FAQ.png" alt="FAQ 이미지">FAQ</a>
+                    </li>
+                </ul>
+            </div>                
+            <!-- 공지사항 -->
+            <div id="notice">
+                <div class="info_inr">
+                    <h3>공지사항</h3>
+                    <div class="n_list">
+                        <ul>
+                            <li>
+                                <div class="day">
+                                <p class="a">16</p>
+                                <p class="b">8월<br>2024</p> 
+                                </div>
+                                <div class="txt">
+                                    <div class="cont deco-bar">
+                                    <a href="#"><p>오페라글라스 대여가격 인상 안내</p></a>
                                     </div>
-                                </a>
-                                <a href="#"><h4>NOTICE</h4></a>
-                            </div>
-
-                        </div>
+                                </div>
+                                <div class="n_btn">
+                                    <a href="#"><img src="./image/info_arr_white_.png" alt=""></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="day">
+                                    <p class="a">16</p>
+                                    <p class="b">8월<br>2024</p> 
+                                </div>
+                                <div class="txt">
+                                    <div class="cont deco-bar">
+                                        <a href="#"><p>2024 드림씨어터 라인업 안내</p></a>
+                                    </div>
+                                </div>
+                                <div class="n_btn">
+                                    <a href="#"><img src="./image/info_arr_white_.png" alt=""></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="day">
+                                    <p class="a">01</p>
+                                    <p class="b">6월<br>2023</p> 
+                                </div>
+                                <div class="txt">
+                                    <div class="cont deco-bar">
+                                    <a href="#"><p>드림씨어터 2024년 대관료 및 대관 세부 사항 변경 안내</p></a>
+                                    </div>
+                                </div>
+                                <div class="n_btn">
+                                    <a href="#"><img src="./image/info_arr_white_.png" alt=""></a>
+                                </div>                           
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
