@@ -8,19 +8,14 @@
     /* .section01 > .container {
         width: 80%;
     } */
-    .day-list{
-        padding: 15px 65px;
-    }
+ 
 }
 /* 화면너비 1680px */
 @media (max-width:1680px) {
     /* 레노버 : 85% */
     /* .section01 > .container {
         width: 85%;
-    } */
-    .day-list{
-        padding: 15px 65px;
-    }
+
 }
 /* 화면너비 1440px */
 @media (max-width:1440px) {

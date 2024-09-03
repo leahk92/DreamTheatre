@@ -170,7 +170,7 @@ main{
 }
 .day-list{
     display: flex;
-    /* padding: 10px 50px; */
+    padding: 15px 65px;
     margin: 0 30px;
     border-bottom: 1px solid #9d9d9d;
 }
