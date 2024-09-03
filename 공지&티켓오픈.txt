@@ -1,0 +1,103 @@
+                <!-- 게시판(공지사항/티켓오픈) -->  
+                <!-- <div id="board">
+                    <div class="notification">
+                        <p class="board-menu">공지사항</p>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <p><span>2024.08.16</span>오페라글라스 대여가격 인상 안내</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p><span>2024.08.16</span>2024 드림씨어터 라인업 안내</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p><span>2023.06.01</span>드림씨어터 2024년 대관료 및 대관 세부 사항 변경 안내</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ticketOpen">
+                        <p class="board-menu">티켓오픈</p>
+                        <div>
+                            <img src="./image/ticketOpen.gif" alt="">
+                            <a href=""><p>2024 Jang Wooyoung Fan Meeting ＜Be Young＞ in BUSAN</p></a>
+                        </div>
+                    </div>
+                </div> -->
+
+/* 게시판(공지사항/티켓오픈) */
+#board{
+    width: 100%;
+    max-width: 1600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+#board > div{
+    padding: 60px 0;
+}
+#board .notification{
+    display: flex;
+    margin-right: 50px;
+}
+#board .board-menu {
+    margin-right: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+.notification ul {
+}
+.notification li {
+    width: 600px;
+    /* border-right: 1px solid #d2d2d2;
+    padding: 50px 0; */
+    background: #eee;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+}
+.notification li:last-child{
+    margin-bottom: 0;
+}
+.notification li span{
+    font-size: 1.1rem;
+    color: #999;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+.notification li a{
+    display: block;
+    font-size: 1.2rem;
+}
+.notification li:hover{
+    background: #522bbd;
+}
+.ticketOpen{
+    display: flex;
+}
+.ticketOpen > div{
+    width: 450px;
+    position: relative;
+}
+.ticketOpen > div > img{
+    width: 100%;
+    height: 325px;
+}
+.ticketOpen div > a {
+    display: block;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    bottom: 0;
+    z-index: 999;
+    padding: 20px;
+    background: #fff;
+    opacity: 0.5;
+}
