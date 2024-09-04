@@ -90,6 +90,7 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: 1.875em 9.375em;
+    margin-top: 3.125em;
 }
 .overviewNavi .overview-tab i{
     margin-right: 10px;
@@ -106,7 +107,10 @@ main{
     margin: 0 20px;
     font-size: 1.3rem;
     font-weight: 500;
-    color: #767676;
+    opacity: 0.6;
+}
+.overview-filter button:hover{
+    opacity: 1;
 }
 
 .calendar{
@@ -149,6 +153,10 @@ main{
     /* line-height: 75px; */
     padding: 1.4em 2em;
 }
+.month-tabs li button:hover{
+    background: #ffb701;
+}
+
 .month-tabs [aria-controls="tabPanel-8"]{
     color: #fff;
     background-color: #333;
@@ -160,9 +168,7 @@ main{
     justify-content: space-between;
     width: 10%;
 }
-.month .move-btns a{
 
-}
 .month .move-btns a:last-child{
 }
 .month .move-btns img{
@@ -179,7 +185,7 @@ main{
     display: flex;
     justify-content: center;
     gap: 5%;
-    padding: 5em 0;
+    padding: 5.7em 0;
 }
 .boxView .poster::before{
     content: '공연\A예정';
@@ -255,7 +261,7 @@ main{
 .day-list .date p{
     font-family: "Montserrat", sans-serif;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     font-weight: 400;
     line-height: 1;
 }
@@ -318,7 +324,7 @@ main{
 /* 주요 서비스 - 아이콘 형식*/
 .service{
     width: 100%;
-    margin: 70px auto;
+    margin: 7.3em auto;
 }
 .service ul{
     display: flex;
@@ -347,60 +353,87 @@ main{
 #notice {
     width: 100%;
     background: #333;
+    margin-bottom: 12em;
 }
-#notice .info_inr {
+#notice .notice-container {
     margin: 0 auto;
-    padding: 1.875em 9.375em;
+    padding: 2.875em 9.375em;
 }
-#notice h3{
-    font-weight: 600;
+.notice-container h3{
+    font-weight: 500;
     font-size: 2.5rem;
+    color: #fff;
+    /* letter-spacing: -0.05rem; */
+}
+.notice-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 2em;
 }
 
-.info_inr .n_list {  width: 85%; 
+.notice-box .n-list {
+    width: 30%; 
+    border: 1px solid #999;
+    border-radius: 2em;
 }
-.info_inr ul {display: flex;}
-.info_inr .n_list li {
-    width: 30%; height: 435px;
-    margin-left: 2%;
+.notice-box .n-list a{
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    border: 1px solid #dfdfdf;
+    height: 400px;
+}
+
+.n-list .n-text{
+    width:88%;
+    color: #fff;
+    padding: 0 50px;
     position: relative;
 }
+.n-text .n-year{
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 50px 0;
+    color: #bbbbbb;
+    
+}
+.n-text .n-date{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    padding-bottom: 30px;
 
-#notice .day {
-    padding-bottom: 20px;
+}
+.n-text .n-title{
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-top: 1px solid #999;
+    padding-top: 30px;
+}
+.notice-box .n-link {
+    width: 12%; 
+    background: #dddddd;
+    border-top-right-radius: 1.9em;          
+    border-bottom-right-radius: 1.9em;      
     display: flex;
     align-items: center;
-    margin:43px 0px 10px 45px;
-
+    justify-content: center;
+}
+.n-link img{
+    width: 41px; 
 }
 
-#notice .day .a {
-    font-family: 'Montserrat';
-    font-size: 50px; font-weight: 600;
-    color: #111;
-    margin-right: 10px;
-}
-#notice .day .b {
-    font-family: 'Arimo';
-    font-size: 20px; 
-    line-height: 1em;
-    color: #111;
-}
+.n-list:hover{
+    border: 1px solid #ffb701;
+     transition: 0.5s;
 
-#notice .txt {
-    margin: 0 35px;
 }
-
-#notice .txt .cont {
-    font-size: 24px;
-    font-family: 'Noto Sans KR';
-    position: relative;
-    padding-top:60px;
-    padding-left:15px;font-weight: 300;
+.n-list:hover .n-title{
+    border-top: 1px solid #ffb701;
+    transition: 0.5s;
+}
+.n-list:hover .n-link{
+    background: #ffb701;
+    transition: 0.6s;
 }
 .deco-bar:before {
     content: '';
