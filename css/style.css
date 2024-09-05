@@ -9,7 +9,9 @@ body{
 header, main, section, footer{
     width: 100%;    
 }
-
+.hidden{
+    display: none;
+}
 /* 랜딩 페이지 */
 #landing-wrap{
     width: 100%;
@@ -113,9 +115,6 @@ main{
     opacity: 1;
 }
 
-.calendar{
-
-}
 .monthNavi{
     display: flex;
     /* padding: 0 100px; */
@@ -143,6 +142,9 @@ main{
 .month-tabs li:first-child{
     border-left: 1px solid #7e7e7e;
 }
+.month-tabs li:last-child{
+    border-right: none;
+}
 .month-tabs li span{
     /* font-family: "Red Hat Display", sans-serif; */
     font-family: "Montserrat", sans-serif;
@@ -156,12 +158,14 @@ main{
 .month-tabs li button:hover{
     background: #ffb701;
 }
-
-.month-tabs [aria-controls="tabPanel-8"]{
+/* .month-tabs #tab-8{
+    color: #fff;
+    background-color: #333;
+} */
+.month-tabs li .active{
     color: #fff;
     background-color: #333;
 }
-
 .month .move-btns{
     display: flex;
     align-items: center;
@@ -174,14 +178,13 @@ main{
 .month .move-btns img{
     width: 28px;
 }
-.hidden{
-    display: none;
-}
+
+/* 프로덕션 탭 패널 */
 .tab-panels-1{
     background-color: #333;
 
 }
-.boxView{
+.tab-panels-1 .boxView{
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -242,7 +245,7 @@ main{
     font-family: "Red Hat Display", sans-serif;
     padding-bottom: 30px;
 }
-
+/* 캘린더 탭 패널 */
 .tab-panels-2{
     background-color: #333;
 }
