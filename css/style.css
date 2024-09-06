@@ -18,57 +18,57 @@ header, main, section, footer{
     height: 100vh;
     /* overflow-y: scroll; */
     /* scroll-snap-type: y mandatory; */
+    background: url('../image/햄릿.gif') no-repeat center;
+    background-size: cover;
 }
-/* 헤더 */
-header{
+/* 헤더 > 로고 */
+.logo  {
     display: flex;
-    position: absolute;
-    justify-content: space-between;
-    padding: 10px 85px;
-    /* border-bottom: 1px solid #333; */
+    justify-content: center;
+    align-items: center;
+    padding: 1.1em 0;
+    border-bottom: 1px solid #ffffff20;
 }
 .logo a{
-    line-height: 100px;  
 }
 .logo img{
     width: 190px;
 }
+/* 헤더 > 내비 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.7em 0;
+    padding: 0 3em;
+}
+nav img{    
+    width: 33px;
+}
+nav .hamburgerBtn{
+    display: block;
+}
 nav .menu-bar{
     display: flex;
     align-items: center;
-    height: 100%;
 }
 nav .menu-bar li{
-    font-size: 19px;
-    font-weight: 500;
     padding: 0 30px;
 }
 nav .menu-bar a{
     color: #fff;
-    line-height: 80px;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 300;
 }
 .icon-bar{
     display: flex;
-    justify-content: flex-end;
-}
-.icon-bar ul{
-    display: flex;
-    /* justify-content: center; */
-    /* background-color: #fff;
-    opacity: 0.5;
-    border-radius: 20px;
-    width: 200px; */
     padding: 5px 0px;
 }
 .icon-bar li{
     padding: 0 10px;
-    align-content: center;
+    /* align-content: center; */
 }
-.icon-bar img{
-    width: 30px;
-}
+
 /* 메인 비주얼 */
 main{
     height: 100%;
@@ -76,9 +76,6 @@ main{
 }
 #main-wrap{    
     height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: #222;
 }
 
 /* 본문1 */
@@ -94,24 +91,28 @@ main{
     padding: 1.875em 9.375em;
     margin-top: 3.125em;
 }
-.overviewNavi .overview-tab i{
+.overview-tabs{
+    display: flex;
+    align-items: center;
+}
+.overview-tabs i{
     margin-right: 10px;
 }
-.overviewNavi .overview-tab button{
+.overview-tabs button{
     font-size: 1.5rem;
     padding: 10px;
     margin-right: 30px;
 }
-.overview-filter{
+.overview-filters{
     display: flex;
 }
-.overviewNavi .overview-filter button{
+.overview-filters button{
     margin: 0 20px;
     font-size: 1.3rem;
     font-weight: 500;
     opacity: 0.6;
 }
-.overview-filter button:hover{
+.overview-filters button:hover{
     opacity: 1;
 }
 
@@ -121,7 +122,7 @@ main{
     justify-content: space-between;
     border-top: 1px solid #7e7e7e;
 }
-.monthNavi > p{
+.monthNavi > h2{
     font-size: 2rem;
     font-weight: 600;
     /* font-family: "Red Hat Display", sans-serif; */
@@ -180,11 +181,11 @@ main{
 }
 
 /* 프로덕션 탭 패널 */
-.tab-panels-1{
+#wrap-tabContents-01{
     background-color: #333;
 
 }
-.tab-panels-1 .boxView{
+#wrap-tabContents-01 .boxView{
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -246,13 +247,13 @@ main{
     padding-bottom: 30px;
 }
 /* 캘린더 탭 패널 */
-.tab-panels-2{
+#wrap-tabContents-02{
     background-color: #333;
 }
 .day-list > a{
     display: flex;
     align-items: center;
-    padding: 1.7em 20em;
+    padding: 1.5em 20em;
     border-bottom: 1px solid #7e7e7e;
 }
 .day-list .date {

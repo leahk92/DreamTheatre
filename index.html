@@ -16,9 +16,10 @@
         <!-- 헤더 -->
         <header>
             <!-- 로고 -->
-            <h1 class="logo"><a href="#"><img src="./image/h1_logo.svg" alt=""></a></h1>
-            <!-- 메뉴 -->
+            <h1 class="logo"><a href="#"><img src="./image/h1_logo.svg" title="드림씨어터 로고"></a></h1>
             <nav>
+                <!-- 메뉴 -->
+                <a class="hamburgerBtn" href="#"><img src="./image/menu-white.png" title="전체 메뉴">
                 <ul class="menu-bar">
                     <li><a href="#">드림씨어터</a></li>
                     <li><a href="#">공연/예매</a></li>
@@ -26,15 +27,12 @@
                     <li><a href="#">멤버십</a></li>
                     <li><a href="#">이용안내</a></li>
                 </ul>
+                <!-- 아이콘 바 -->
+                <ul class="icon-bar">
+                    <li><a href="#"><img src="./image/user-white.png" title="로그인"></a></li>
+                    <li><a href="#"><img src="./image/search-white.png" title="검색"></a></li>
+                </ul>
             </nav>
-            <!-- 아이콘 -->
-            <div class="icon-bar">
-                <ul>
-                    <li><a href="#"><img src="./image/user.png" alt="#"></a></li>
-                    <li><a href="#"><img src="./image/search.png" alt="#"></a></li>
-                    <li><a href="#"><img src="./image/menu.png" alt="#"></a></li>
-                </ul>   
-            </div>
         </header>
         <!-- //헤더 -->
         <!-- 메인 비주얼 -->
@@ -48,13 +46,21 @@
         <!-- 섹션1 -->        
         <!-- 프로덕션 & 캘린더 -->
         <section class="section01">
-            <!-- 첫 번째 내비 -->
+            <!-- 프로덕션/캘린더 탭 내비 -->
             <div class="overviewNavi">
-                <h2 class="overview-tab">
-                    <button><i class="fa-solid fa-masks-theater"></i>프로덕션</button>
-                    <button><i class="fa-regular fa-calendar"></i>캘린더</button>
-                </h2>
-                <div class="overview-filter">
+                <ul class="overview-tabs" role="tablist" aria-labelledby="year">
+                    <li>
+                        <button id="production" role="tab" aria-controls="wrap-tabContents-01" aria-selected="false">
+                            <i class="fa-solid fa-masks-theater"></i>프로덕션
+                        </button>
+                    </li>
+                    <li>
+                        <button id="calendar" role="tab" aria-controls="wrap-tabContents-02" aria-selected="false">
+                            <i class="fa-regular fa-calendar"></i>캘린더
+                        </button>
+                    </li>
+                </ul>
+                <div class="overview-filters">
                     <button>뮤지컬</button>
                     <button>콘서트</button>
                     <button>연극</button>
@@ -66,29 +72,29 @@
                     <button><img src="./image/next-white.png" alt=""></button> -->
                 </div>
             </div>
-            <!-- 두 번째 내비 -->
+            <!-- 월(月) 탭 내비 -->
             <div class="monthNavi">
-                <p id="year">2024</p>
+                <h2 id="year">2024</h2>
                 <ul class="month-tabs" role="tablist" aria-labelledby="year">
-                    <li><button id="tab-1"  role="tab" aria-controls="tabPanel-1"  aria-selected="false"> <span>1</span> 월</button></li>
-                    <li><button id="tab-2"  role="tab" aria-controls="tabPanel-2"  aria-selected="false"><span>2</span> 월</button></li>
-                    <li><button id="tab-3"  role="tab" aria-controls="tabPanel-3"  aria-selected="false"><span>3 </span>월</button></li>
-                    <li><button id="tab-4"  role="tab" aria-controls="tabPanel-4"  aria-selected="false"><span>4 </span>월</button></li>
-                    <li><button id="tab-5"  role="tab" aria-controls="tabPanel-5"  aria-selected="false"><span>5 </span>월</button></li>
-                    <li><button id="tab-6"  role="tab" aria-controls="tabPanel-6"  aria-selected="false"><span>6 </span>월</button></li>
-                    <li><button id="tab-7"  role="tab" aria-controls="tabPanel-7"  aria-selected="false"><span>7 </span>월</button></li>
-                    <li><button id="tab-8"  role="tab" aria-controls="tabPanel-8"  aria-selected="false"><span>8 </span>월</button></li>
-                    <li><button id="tab-9"  role="tab" aria-controls="tabPanel-9"  aria-selected="false"><span>9 </span>월</button></li>
-                    <li><button id="tab-10" role="tab" aria-controls="tabPanel-10" aria-selected="false"><span>10</span>월</button></li>
-                    <li><button id="tab-11" role="tab" aria-controls="tabPanel-11" aria-selected="false"><span>11</span>월</button></li>
-                    <li><button id="tab-12" role="tab" aria-controls="tabPanel-12" aria-selected="false"><span>12</span>월</button></li>
+                    <li><button id="tab-1"  role="tab" aria-controls="tabPanel-cal-01"  aria-selected="false"> <span>1</span> 월</button></li>
+                    <li><button id="tab-2"  role="tab" aria-controls="tabPanel-cal-02"  aria-selected="false"><span>2</span> 월</button></li>
+                    <li><button id="tab-3"  role="tab" aria-controls="tabPanel-cal-03"  aria-selected="false"><span>3 </span>월</button></li>
+                    <li><button id="tab-4"  role="tab" aria-controls="tabPanel-cal-04"  aria-selected="false"><span>4 </span>월</button></li>
+                    <li><button id="tab-5"  role="tab" aria-controls="tabPanel-cal-05"  aria-selected="false"><span>5 </span>월</button></li>
+                    <li><button id="tab-6"  role="tab" aria-controls="tabPanel-cal-06"  aria-selected="false"><span>6 </span>월</button></li>
+                    <li><button id="tab-7"  role="tab" aria-controls="tabPanel-cal-07"  aria-selected="false"><span>7 </span>월</button></li>
+                    <li><button id="tab-8"  role="tab" aria-controls="tabPanel-cal-08"  aria-selected="false"><span>8 </span>월</button></li>
+                    <li><button id="tab-9"  role="tab" aria-controls="tabPanel-cal-09"  aria-selected="false"><span>9 </span>월</button></li>
+                    <li><button id="tab-10" role="tab" aria-controls="tabPanel-cal-10" aria-selected="false"><span>10</span>월</button></li>
+                    <li><button id="tab-11" role="tab" aria-controls="tabPanel-cal-11" aria-selected="false"><span>11</span>월</button></li>
+                    <li><button id="tab-12" role="tab" aria-controls="tabPanel-cal-12" aria-selected="false"><span>12</span>월</button></li>
                     <li><button id="tab-prev" role="button" class="arr"><img src="./image/prev.png" alt="이전"></button></li>
                     <li><button id="tab-next" role="button" class="arr"><img src="./image/next.png" alt="다음"></button></li>
                 </ul>
             </div>
             <!-- 프로덕션 탭 패널 -->
-            <div class="tab-panels-1" hidden>
-                <ul class="boxView">
+            <div id="wrap-tabContents-01" hidden role="tabpanel"  tabindex="0" aria-labelledby="production">
+                <ul class="boxView" >
                     <li>
                         <a class="poster" href="">
                             <img src="./image/레미제라블.jpg" alt="">
@@ -120,10 +126,59 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="boxView">
+                    <li>
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>2월</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="boxView">
+                    <li>
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>3월</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="boxView">
+                    <li>
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>4월</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="boxView" >
+                    <li>
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>5월</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
             </div>
             <!-- 캘린더 탭 패널 -->
-            <div class="tab-panels-2">
-                <ul id="tabPanel-1" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
+            <div id="wrap-tabContents-02" hidden role="tabpanel"  tabindex="0" aria-labelledby="calendar">
+                <ul id="tabPanel-cal-01" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -140,7 +195,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-2" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
+                <ul id="tabPanel-cal-02" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -157,7 +212,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-3" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
+                <ul id="tabPanel-cal-03" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -174,7 +229,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-4" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
+                <ul id="tabPanel-cal-04" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -191,7 +246,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-5" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
+                <ul id="tabPanel-cal-05" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -208,7 +263,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-6" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-6">
+                <ul id="tabPanel-cal-06" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-6">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -225,7 +280,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-7" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-7">
+                <ul id="tabPanel-cal-07" hidden role="tabpanel"  tabindex="0" aria-labelledby="tab-7">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -242,7 +297,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-8" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-8">
+                <ul id="tabPanel-cal-08" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-8">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -319,7 +374,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-9" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-9">
+                <ul id="tabPanel-cal-09" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-9">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -336,7 +391,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-10" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-10">
+                <ul id="tabPanel-cal-10" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-10">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -488,7 +543,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-11" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-11">
+                <ul id="tabPanel-cal-11" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-11">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -565,7 +620,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-12" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-12">
+                <ul id="tabPanel-cal-12" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-12">
                     <li class="day-list">
                         <a href="">
                             <div class="date">
@@ -686,6 +741,8 @@
         </footer>
         <!-- <script src="./js/playSlider.js"></script> -->
         <!-- <script src="./js/calTabs.js"></script> -->
-        <script src="./js/calTabs2.js"></script>
+        <!-- <script src="./js/calTabs2.js"></script> -->
+        <script src="./js/calTabs1.js"></script>
+        <script src="./js/overviewNavi.js"></script>
 </body>
 </html>

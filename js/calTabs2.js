@@ -2,7 +2,7 @@
 
 const tabsContainer = document.querySelector(".month-tabs");
 const tabButtons = tabsContainer.querySelectorAll("[role='tab']");
-const tabPanels = document.querySelectorAll("[role='tabpanel']");
+const tabPanels = document.querySelectorAll("role='tabpanel']");
 
 const tabNext = tabsContainer.querySelector("#tab-next");
 const tabPrev = tabsContainer.querySelector("#tab-prev");
@@ -19,7 +19,7 @@ function initTabs() {
     firstTab.setAttribute("aria-selected", "true");
     firstPanel.hidden = false;
     firstTab.classList.add(ACTIVE_CLASSNAME);
-    currentIndex = 0;  // 현재 첫 번째 탭으로 설정
+    currentIndex = 7;  // 현재 첫 번째 탭으로 설정
 }
 initTabs();
 
