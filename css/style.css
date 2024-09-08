@@ -26,7 +26,7 @@ header, main, section, footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.1em 0;
+    padding: 0.9em 0;
     border-bottom: 1px solid #ffffff20;
 }
 .logo a{
