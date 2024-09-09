@@ -1,13 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>드림씨어터</title>
+    <title>테스트</title>
     <!-- 폰트어썸 cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
@@ -50,12 +50,12 @@
             <div class="overviewNavi">
                 <ul class="overview-tabs" role="tablist" aria-labelledby="year">
                     <li>
-                        <button class="btn-menu-tab" id="production" role="tab" aria-controls="wrap-tabContents-01" aria-selected="false">
+                        <button class="btn-menu-tab" id="production" role="tab" aria-controls="tabContents-pd" aria-selected="false">
                             <i class="fa-solid fa-masks-theater"></i>프로덕션
                         </button>
                     </li>
                     <li>
-                        <button class="btn-menu-tab" id="calendar" role="tab" aria-controls="wrap-tabContents-02" aria-selected="false">
+                        <button class="btn-menu-tab" id="calendar" role="tab" aria-controls="tabContents-cal" aria-selected="false">
                             <i class="fa-regular fa-calendar"></i>캘린더
                         </button>
                     </li>
@@ -89,94 +89,28 @@
                     <li><button id="tab-next" role="button" class="arr"><img src="./image/next.png" alt="다음"></button></li>
                 </ul>
             </div>
-            <!-- 프로덕션 탭 패널 -->
-            <div id="wrap-tabContents-01" hidden role="tabpanel"  tabindex="0" aria-labelledby="production">
-                <ul class="boxView" id="tabPanel-01" role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
-                    <li>
-                        <a class="poster" href="">
-                            <img src="./image/레미제라블.jpg" alt="">
-                            <div>
-                                <p>Musical</p>
-                                <p>레미제라블</p>
-                                <p>0809 - 081 1</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
+            <!-- (수정)테스트 - 탭 패널 -->
+            <div class="tabContents">
+                <ul class="panelBox" id="tabPanel-01" role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
                         <a class="poster" href="">
                             <img src="./image/phantom.jpg" alt="">
                             <div>
                                 <p>Musical</p>
                                 <p>오페라의 유령</p>
-                                <p>0809 - 081 1</p>
+                                <p>0109 - 011 1</p>
                             </div>
                         </a>
-                    </li>
-                    <li>
                         <a class="poster" href="">
                             <img src="./image/영웅.jpg" alt="">
                             <div>
                                 <p>Musical</p>
                                 <p>영웅</p>
-                                <p>0809 - 081 1</p>
+                                <p>0109 - 011 1</p>
                             </div>
                         </a>
                     </li>
-                </ul>
-                <!-- <ul class="boxView" id="tabPanel-02" role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
-                    <li>
-                        <a class="poster" href="">
-                            <img src="./image/레미제라블.jpg" alt="">
-                            <div>
-                                <p>Musical</p>
-                                <p>레미제라블</p>
-                                <p>2월</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="boxView" id="tabPanel-03" role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
-                    <li>
-                        <a class="poster" href="">
-                            <img src="./image/레미제라블.jpg" alt="">
-                            <div>
-                                <p>Musical</p>
-                                <p>레미제라블</p>
-                                <p>3월</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="boxView" id="tabPanel-04" role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
-                    <li>
-                        <a class="poster" href="">
-                            <img src="./image/레미제라블.jpg" alt="">
-                            <div>
-                                <p>Musical</p>
-                                <p>레미제라블</p>
-                                <p>4월</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="boxView" id="tabPanel-05" role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
-                    <li>
-                        <a class="poster" href="">
-                            <img src="./image/레미제라블.jpg" alt="">
-                            <div>
-                                <p>Musical</p>
-                                <p>레미제라블</p>
-                                <p>5월</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul> -->
-
-            </div>
-            <!-- 캘린더 탭 패널 -->
-            <div id="wrap-tabContents-02" hidden role="tabpanel"  tabindex="0" aria-labelledby="calendar">
-                <ul id="tabPanel-01" role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
-                    <li class="day-list">
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>1월</p>
@@ -192,8 +126,26 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-02" role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-02" role="tabpanel"  tabindex="0" aria-labelledby="tab-2">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0209 - 021 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0209 - 021 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>2월</p>
@@ -209,8 +161,34 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-03" role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-03" role="tabpanel"  tabindex="0" aria-labelledby="tab-3">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>3월</p>
@@ -226,8 +204,26 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-04" role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-04" role="tabpanel"  tabindex="0" aria-labelledby="tab-4">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>4월</p>
@@ -243,8 +239,34 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-05" role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-05" role="tabpanel"  tabindex="0" aria-labelledby="tab-5">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>5월</p>
@@ -260,8 +282,26 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-06" role="tabpanel"  tabindex="0" aria-labelledby="tab-6">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-06" role="tabpanel"  tabindex="0" aria-labelledby="tab-6">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>6월</p>
@@ -277,8 +317,34 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-07" role="tabpanel"  tabindex="0" aria-labelledby="tab-7">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-07" role="tabpanel"  tabindex="0" aria-labelledby="tab-7">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>7월</p>
@@ -294,11 +360,29 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-08" role="tabpanel" tabindex="0" aria-labelledby="tab-8">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-08" role="tabpanel"  tabindex="0" aria-labelledby="tab-8">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
-                                <p>08-09</p>
+                                <p>8월</p>
                                 <p>20:00 (토)</p>
                             </div>
                             <div class="playttl">
@@ -309,12 +393,10 @@
                                 <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
                             </div>
                         </a>
-                    </li>
-                    <li class="day-list">
                         <a href="">
                             <div class="date">
-                                <p>08-10</p>
-                                <p>14:00 (토)</p>
+                                <p>8월</p>
+                                <p>20:00 (일)</p>
                             </div>
                             <div class="playttl">
                                 <p>뮤지컬 <레미제라블></p>
@@ -324,55 +406,37 @@
                                 <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
                             </div>
                         </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>08-10</p>
-                                <p>19:00 (토)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <레미제라블></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>08-11</p>
-                                <p>14:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <레미제라블></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>08-11</p>
-                                <p>19:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <레미제라블></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
+
                     </li>
                 </ul>
-                <ul id="tabPanel-09" role="tabpanel" tabindex="0" aria-labelledby="tab-9">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-09" role="tabpanel"  tabindex="0" aria-labelledby="tab-9">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>9월</p>
@@ -388,150 +452,33 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-10" role="tabpanel" tabindex="0" aria-labelledby="tab-10">
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-18</p>
-                                <p>19:30 (금)</p>
+                <ul class="panelBox" id="tabPanel-10" role="tabpanel"  tabindex="0" aria-labelledby="tab-10">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
                             </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
                             </div>
                         </a>
                     </li>
-                    <li class="day-list">
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
-                                <p>10-19</p>
-                                <p>14:00 (토)</p>
+                                <p>10월</p>
+                                <p>20:00 (토)</p>
                             </div>
                             <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-19</p>
-                                <p>19:00 (토)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-20</p>
-                                <p>14:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-20</p>
-                                <p>19:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-25</p>
-                                <p>19:30 (금)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-26</p>
-                                <p>14:00 (토)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-26</p>
-                                <p>19:00 (토)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-27</p>
-                                <p>14:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>10-27</p>
-                                <p>19:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
+                                <p>뮤지컬 <레미제라블></p>
                             </div>
                             <div class="book-btn">
                                 <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
@@ -540,75 +487,41 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-11" role="tabpanel" tabindex="0" aria-labelledby="tab-11">
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>11-01</p>
-                                <p>19:30 (금)</p>
+                <ul class="panelBox" id="tabPanel-11" role="tabpanel"  tabindex="0" aria-labelledby="tab-11">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/레미제라블.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>레미제라블</p>
+                                <p>0809 - 081 1</p>
                             </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
                             </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
                             </div>
                         </a>
                     </li>
-                    <li class="day-list">
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
-                                <p>11-02</p>
-                                <p>14:00 (토)</p>
+                                <p>11월</p>
+                                <p>20:00 (토)</p>
                             </div>
                             <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>11-02</p>
-                                <p>19:00 (토)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>11-03</p>
-                                <p>14:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
-                            </div>
-                            <div class="book-btn">
-                                <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
-                                <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="day-list">
-                        <a href="">
-                            <div class="date">
-                                <p>11-03</p>
-                                <p>19:00 (일)</p>
-                            </div>
-                            <div class="playttl">
-                                <p>뮤지컬 <하데스타운></p>
+                                <p>뮤지컬 <레미제라블></p>
                             </div>
                             <div class="book-btn">
                                 <img class="black" src="./image/ticket-black.png" alt="티켓 아이콘">
@@ -617,8 +530,26 @@
                         </a>
                     </li>
                 </ul>
-                <ul id="tabPanel-12" role="tabpanel" tabindex="0" aria-labelledby="tab-12">
-                    <li class="day-list">
+                <ul class="panelBox" id="tabPanel-12" role="tabpanel"  tabindex="0" aria-labelledby="tab-12">
+                    <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
+                        <a class="poster" href="">
+                            <img src="./image/phantom.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>오페라의 유령</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                        <a class="poster" href="">
+                            <img src="./image/영웅.jpg" alt="">
+                            <div>
+                                <p>Musical</p>
+                                <p>영웅</p>
+                                <p>0809 - 081 1</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
                                 <p>12월</p>
@@ -739,7 +670,8 @@
         <!-- <script src="./js/playSlider.js"></script> -->
         <!-- <script src="./js/calTabs.js"></script> -->
         <!-- <script src="./js/calTabs2.js"></script> -->
-        <script src="./js/calTabs1.js"></script>
-        <script src="./js/overviewNavi.js"></script>
+        <!-- <script src="./js/calTabs1.js"></script>
+        <script src="./js/overviewNavi.js"></script> -->
+        <script src="./js/test.js"></script>
 </body>
 </html>
