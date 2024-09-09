@@ -23,7 +23,7 @@ function initSet(){
     // 모든 패널을 숨김 처리 (pd패널 제외)
     panelBoxes.forEach(panel => (panel.hidden = true));
 
-    pdPanel.forEach(panel => (panel.hidden = true)); //빼기
+    pdPanel.forEach(panel => (panel.hidden = true)); //빼도 되는 듯
     calPanel.forEach(panel => (panel.hidden = true));
     // 첫 번째 탭 활성화 및 해당 패널 보이기
     firstTab.setAttribute("aria-selected", "true");

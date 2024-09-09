@@ -13,6 +13,9 @@
 /* 화면너비 1680px */
 @media (max-width:1680px) {
     /* 레노버 : 85% */
+    nav .menu-bar a {
+        font-weight: 400;
+    }
     .overviewNavi{
         padding: 1.375em 7.375em;
         margin-top: 2.125em;
@@ -24,6 +27,11 @@
     .monthNavi .arr img {
         width: 20px;
     }
+    .calContent > a {
+    
+        padding: 1.5em 15em;
+    }
+
     .day-list > a {
         padding: 1.4em 10em;
     }
@@ -33,14 +41,108 @@
     .service {
         margin: 5.3em auto;
     }
+
+    #notice .notice-container {
+        margin: 0 auto;
+        padding: 2.875em 6.375em;
+    }
+    .n-text .n-date {
+        font-size: 1.9rem;
+    }
+    .n-text .n-title {
+        font-size: 1.45rem;
+    }
+    .n-list .n-text {
+        width: 95%;
+        padding: 0px 50px;
+    }
+    .n-link img {
+        width: 35px;
+    }
+    .n-text .n-year {
+        margin: 45px 0 47px;
+    }
+    .notice-box .n-list {
+        width: 30%;
+    }
+    .notice-box .n-list a {
+        height: 370px;
+    }
 }
 /* 화면너비 1440px */
 @media (max-width:1440px) {
     /* lg그램 : 95% */
-    .section01 > .container{
-        width: 95%;
+    nav .menu-bar a {
+        font-size: 1.2rem;
+        font-weight: 400;
     }
-}
+    .overviewNavi{
+        padding: 1.375em 4.375em;
+        margin-top: 2.125em;
+    }   
+    .overview-tabs button {
+        font-size: 1.45rem;
+        margin-right: 25px;
+    }
+    .overview-filters button {
+        font-size: 1.2rem;
+    }
+    
+    .monthNavi > h2 {
+        font-size: 1.6rem;
+    }
+    .month-tabs li button{
+        font-size: 1.05rem;
+        padding: 1.4em 1.45em;
+    }
+    .monthNavi .arr img {
+        width: 18px;
+    }
+    .pdContent .poster {
+        width: 310px;
+    }
+    .pdContent .poster img {
+        width: 100%;
+        height: 450px;
+    }
+    .pdContent .poster > div {
+        width: 310px;
+        font-weight: 300;
+        background: #000;
+        opacity: 0.8;
+        text-align: center;
+    }
+    .poster > div > p:nth-child(2) {
+        font-size: 1.3rem;
+        font-weight: 400;
+        /* padding: 5px 0 50px; */
+    }
+  
+    .calContent > a {
+        padding: 1.5em 9em;
+    }
+    .calContent .date p {
+        font-size: 1.2rem;
+    }
+    .calContent .date p:first-child {
+        width: 43%;
+    }
+
+    .calContent .playttl > p {
+        font-size: 1.25rem;
+    }
+    .calContent .book-btn img {
+        width: 36px;
+    }
+    .day-list > a {
+        padding: 1.4em 10em;
+    }
+    .day-list .date p:first-child {
+        width: 45%;
+    }
+    .service {
+        margin: 5.3em auto;
+    }}
 /* 화면너비 1024px */
 @media (max-width:1024px) {
 }

@@ -18,66 +18,6 @@
 }
 
 
-/* 헤더 */
-#h_container {width: 1380px; margin: 0 auto;}
-#header {width: 100%;}
-
-#header .inr {display: flex;
- height: 100px; width: 100%;
-}
-#header h1{
-    padding: 11px;
-    width: 12%;
-    }
-#header h1 a {display: block;}
-#header h1 a img {
-    width: 120px;}
-
-#header .inr_nav {width: 70%;
-    padding: 0 6% 0 12%;   }
-#header .gnb {    line-height: 100px;
-    float: left;
- }
-   
- #header .gnb li {float: left;
-    display: block;
-    padding:0 25px;
- }
-#header .gnb > li > a {
-    color: #000;
-    font-size: 18px;
-    text-align: center;
-    /* font-weight: 700; */
-}
-#header .inr .icon {
-    width: 18%;
-}
-.icon ul {width: 100%;
-    text-align: center;
-    float:left;
-  
-}
-.icon ul li {width: 50%;
-    display: block;
-border-left: 1px #ddd solid;
-padding: 27px;
-float: left;}
-
-.icon ul li:last-child {
-    border-right: 1px #ddd solid;
-}
-.icon ul li a {}
-
-.icon .caption {
-     font-family: 'Lato';
-     font-size: 15px; color: rgb(149, 149, 149);
-    font-weight: 600;
-    }
-
-#header .m_inr {
-display: none;
-}
-
 /* 상단메뉴 */
 #top { width: 100%;
     display: flex;
