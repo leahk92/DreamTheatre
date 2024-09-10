@@ -29,10 +29,8 @@ header, main, section, footer{
     padding: 0.9em 0;
     border-bottom: 1px solid #ffffff20;
 }
-.logo a{
-}
 .logo img{
-    width: 190px;
+    width: 230px;
 }
 /* 헤더 > 내비 */
 nav {
@@ -57,18 +55,34 @@ nav .menu-bar li{
 }
 nav .menu-bar a{
     color: #fff;
-    font-size: 1.3rem;
-    font-weight: 300;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 .icon-bar{
     display: flex;
     padding: 5px 0px;
+    align-items: center;
 }
 .icon-bar li{
     padding: 0 10px;
-    /* align-content: center; */
 }
+.lang{
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.50);
+    margin-right: 10px;
+}
+.lang a {
+    display: block;
+    color: #FFF;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: normal;
+}
+.lang a:hover {
 
+}
 /* 메인 비주얼 */
 main{
     height: 100%;
@@ -185,15 +199,34 @@ main{
     background-color: #333;
 }
 
-[role = "tabpanel"]{
+.panelBox{
     background-color: #333;
 
 }
-[role = "tabpanel"] .pdContent{
+.pdContent{
     display: flex;
     justify-content: center;
     gap: 5%;
     padding: 5.7em 0;
+    /* 그리드 공부하기 */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5%; */
+    overflow: hidden;
+}
+.pdContent .poster {
+    /* width: 350px;
+    display: block;
+    position: relative;
+    border: 1.5px solid #9e9e9e; */
+
+    display: block;
+    width: 350px;
+
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #9e9e9e;
+
 }
 .pdContent .poster::before{
     content: '공연\A예정';
@@ -208,47 +241,84 @@ main{
     font-size: 0.9rem;
     font-weight: 500;
 }
-
-.pdContent .poster {
-    width: 350px;
-    display: block;
-    position: relative;
-    box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.62);
-}
-
 .pdContent .poster img{
-    width: 100%;
+    /* width: 100%;
     height: 500px;
     object-fit: cover;
     filter: brightness(75%);
+ */
+    height: 100%;
+    object-fit: cover;
+    
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
 }
-.pdContent .poster > div{
-    position: absolute;
+.pdContent .poster > .overlay{
+    /* position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 999;
-    width: 350px;
     font-weight: 300;
-    color: #fff;
-    /* padding: 20px; */
+    padding: 10px 100px;
     background: #000;
-    opacity: 0.8;
+    opacity: 0.5;
+    text-align: center; */
+
+    color: #fff;
+
+    height: 0; width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 70%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
     text-align: center;
+    font-weight: 300;
+    transition: height 0.5s;
+    z-index: 999;
 }
 
-.poster > div > p:nth-child(1){
-    padding: 50px 0 5px;
+.poster > .overlay > p:nth-child(1){
+    margin-top: 30px;
+    padding-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.15rem;
+    border-bottom :1px solid #ccc;
 }
-.poster > div > p:nth-child(2){
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 5px 0 50px;
+.poster > .overlay > p:nth-child(2){
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 50px 0 15px;
 }
-.poster > div > p:nth-child(3){
+.poster > .overlay > p:nth-child(3){
     font-size: 1.3rem;
     font-weight: 400;
-    /* font-family: "Montserrat", sans-serif; */
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Red Hat Display", sans-serif; */
     padding-bottom: 30px;
+}
+.poster > .overlay > button{
+    margin-top:40px;
+    padding: 15px 55px;
+    border-radius: 0.3em;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    background: #e3333e; color: #FFF;
+}
+
+.poster:hover img{
+    transform: scale(1.1);
+}
+.poster:hover .overlay{
+    height: 100%;
 }
 /* 캘린더 탭 패널 */
 .calContent > a{
@@ -272,6 +342,7 @@ main{
 }
 .calContent .date p:first-child{
     width: 35%;
+    
     font-weight: 700;
 }
 .calContent .date p:last-child{
@@ -366,7 +437,7 @@ main{
 }
 .notice-container h3{
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #fff;
     /* letter-spacing: -0.05rem; */
 }
@@ -377,7 +448,7 @@ main{
 }
 
 .notice-box .n-list {
-    width: 30%; 
+    width: 28%; 
     border: 1px solid #999;
     border-radius: 2em;
 }
@@ -387,7 +458,7 @@ main{
 }
 
 .n-list .n-text{
-    width:88%;
+    width:90%;
     color: #fff;
     padding: 0 50px;
     position: relative;
@@ -403,7 +474,7 @@ main{
 }
 .n-text .n-date{
     font-family: "Montserrat", sans-serif;
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 600;
     padding-bottom: 30px;
 
@@ -415,7 +486,7 @@ main{
     padding-top: 30px;
 }
 .notice-box .n-link {
-    width: 12%; 
+    width: 10%; 
     background: #dddddd;
     border-top-right-radius: 1.9em;          
     border-bottom-right-radius: 1.9em;      
@@ -424,7 +495,7 @@ main{
     justify-content: center;
 }
 .n-link img{
-    width: 41px; 
+    width: 35px; 
 }
 
 .n-list:hover{
