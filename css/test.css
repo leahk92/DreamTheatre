@@ -558,9 +558,9 @@ right: 20px;
 
 
 /* 푸터 */
-footer {
+/* footer {
     
-}
+} */
 footer .infoArea{
     width: 100%;
     background-color: #000;
@@ -593,7 +593,7 @@ footer .addrArea{
 footer .addrArea address{
     font-size: 15px;
     color: #888;
-    margin-right: 500px;
+    margin-right: 31.25em;
 }
 footer .addrArea address p{
     margin-bottom: 5px;
