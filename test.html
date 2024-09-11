@@ -40,6 +40,9 @@
         <!-- 메인 비주얼 -->
         <main>
             <div id="main-wrap">
+                <h2>공연 제목</h2>
+                <p>뭐뭐뭐</p>
+                <button>Read more</button>
             </div>
         </main>
         <!-- //메인 비주얼 -->
@@ -73,7 +76,7 @@
             </div>
             <!-- 월(月) 탭 내비 -->
             <div class="monthNavi">
-                <h2 id="year">2024</h2>
+                <h3 id="year">2024</h3>
                 <ul class="month-tabs" role="tablist" aria-labelledby="year">
                     <li><button id="tab-1"  role="tab" aria-controls="tabPanel-01"  aria-selected="false"> <span>1</span> 월</button></li>
                     <li><button id="tab-2"  role="tab" aria-controls="tabPanel-02"  aria-selected="false"><span>2</span> 월</button></li>
@@ -96,6 +99,7 @@
                 <ul class="panelBox" id="tabPanel-01" role="tabpanel"  tabindex="0" aria-labelledby="tab-1">
                     <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
                         <a class="poster" href="">
+                            <em>공연 <br> 예정</em>
                             <img src="./image/phantom.jpg" alt="">
                             <div class="overlay">
                                 <p>Musical</p>
@@ -105,6 +109,7 @@
                             </div>
                         </a>
                         <a class="poster" href="">
+                            <em>공연 <br> 예정</em>
                             <img src="./image/영웅.jpg" alt="">
                             <div class="overlay">
                                 <p>Musical</p>
@@ -171,10 +176,10 @@
                     <li class="pdContent" id="tabContents-pd" role="tabpanel"  tabindex="0" aria-labelledby="production">
                         <a class="poster" href="">
                             <img src="./image/레미제라블.jpg" alt="">
-                            <div>
+                            <div class="overlay">
                                 <p>Musical</p>
                                 <p>레미제라블</p>
-                                <p>0809 - 081 1</p>
+                                <p>0209 - 021 1</p>
                                 <button>TICKET</button>
                             </div>
                         </a>
@@ -183,20 +188,21 @@
                             <div class="overlay">
                                 <p>Musical</p>
                                 <p>오페라의 유령</p>
-                                <p>0809 - 081 1</p>
+                                <p>0209 - 021 1</p>
                                 <button>TICKET</button>
                             </div>
                         </a>
                         <a class="poster" href="">
-                            <img src="./image/영웅.jpg" alt="">
+                            <img src="./image/phantom.jpg" alt="">
                             <div class="overlay">
                                 <p>Musical</p>
-                                <p>영웅</p>
-                                <p>0809 - 081 1</p>
+                                <p>오페라의 유령</p>
+                                <p>0209 - 021 1</p>
                                 <button>TICKET</button>
                             </div>
                         </a>
                     </li>
+
                     <li class="calContent" id="tabContents-cal" role="tabpanel"  tabindex="0" aria-labelledby="calendar">
                         <a href="">
                             <div class="date">
@@ -626,7 +632,7 @@
             <!-- 공지사항 -->
             <div id="notice">
                 <div class="notice-container">
-                    <h3>공지사항</h3>
+                    <h4>공지사항</h4>
                     <ul class="notice-box">
                         <li class="n-list">
                             <a href="">
