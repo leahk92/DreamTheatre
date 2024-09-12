@@ -6,6 +6,7 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+#landing-wrap,
 header,
 main,
 section,
@@ -17,13 +18,78 @@ footer {
 }
 /* 랜딩 페이지 */
 #landing-wrap {
-  width: 100%;
   height: 100vh;
-  /* overflow-y: scroll; */
-  /* scroll-snap-type: y mandatory; */
   background: url("../image/햄릿.gif") no-repeat center;
   background-size: cover;
+  animation: zoomOut 3s ease-in-out forwards;
+
+  /* min-height: 100vh; */
 }
+
+@keyframes zoomOut {
+  0% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+/* 헤더 - 햄버거 메뉴 */
+#check {
+  z-index: 3;
+  display: none;
+}
+/* @media (max-width: 960px) */
+/* header nav {
+  display: none;
+} */
+
+label .close-btn {
+  display: none;
+}
+
+#check:checked ~ nav .menu-bar {
+  z-index: 2;
+  position: fixed;
+  background: rgba(48, 48, 48, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#check:checked ~ nav .menu-bar li {
+  /* font-weight: 500; */
+  margin-bottom: 50px;
+}
+#check:checked ~ nav .menu-bar a {
+  /* font-weight: 500; */
+  font-size: 30px;
+  margin-right: 0;
+  letter-spacing: 2px;
+}
+#check:checked ~ nav label .menu-btn {
+  display: none;
+}
+#check:checked ~ nav label .close-btn {
+  z-index: 3;
+  display: block;
+  position: fixed;
+  right: 10%;
+  color: #fff;
+  font-size: 50px;
+}
+
+label {
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
 /* 헤더 > 로고 */
 .logo {
   display: flex;
@@ -46,7 +112,7 @@ nav {
 nav img {
   width: 33px;
 }
-nav .hamburgerBtn {
+nav .menu-btn {
   display: block;
 }
 nav .menu-bar {
@@ -87,20 +153,40 @@ nav .menu-bar a {
 }
 /* 메인 비주얼 */
 main {
-  height: 100%;
-  /* background: linear-gradient(45deg, Violet, Orange); */
+  /* max-width: 650px; */
 }
-#main-wrap {
-  height: 100vh;
+.main-info {
   color: #fff;
+  position: absolute;
+  bottom: 12%;
+  left: 10%;
 }
-#main-wrap h2 {
+.main-info h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
 }
-#main-wrap p {
+.main-info p {
+  font-size: 1.9rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  margin: 5px 0 25px;
 }
-#main-wrap button {
-  color: #fff;
+.main-info button {
+  background: #fff;
+  color: #555;
   border: 1px solid #fff;
+  padding: 10px 40px 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+.main-info button img {
+  width: 11px;
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  transform: translateY(-49%);
 }
 
 /* 본문1 */
@@ -230,7 +316,7 @@ main {
 
   position: relative;
   overflow: hidden;
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid #333;
 }
 .pdContent em {
   display: inline-block;
@@ -303,6 +389,10 @@ main {
   font-size: 1rem;
   background: #ffb701;
 }
+.poster:hover {
+  border: 1.5px solid #fff;
+  transition: 0.5s;
+}
 .poster:hover img {
   transform: scale(1.1);
   transition: 0.5s;
@@ -332,17 +422,17 @@ main {
 .calContent .date p {
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1;
 }
 .calContent .date p:first-child {
-  width: 35%;
+  width: 55%;
 
   font-weight: 700;
 }
 .calContent .date p:last-child {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* 공연 제목 */
@@ -353,8 +443,8 @@ main {
 .calContent .playttl > p {
   display: inline-block;
   color: #fff;
-  font-size: 1.4rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 200;
   padding: 0 10px;
 }
 .calContent .book-btn img {
@@ -384,11 +474,12 @@ main {
   color: #000;
 }
 .calContent a:hover .date p:last-child {
-  font-weight: 500;
+  font-weight: 600;
 }
 .calContent a:hover .playttl p {
   color: #000;
   font-weight: 600;
+  font-size: 1.15rem;
   border-bottom: 1.5px solid #333;
 }
 
@@ -589,7 +680,7 @@ footer .addrArea {
 footer .addrArea address {
   font-size: 15px;
   color: #888;
-  margin-right: 31.25em;
+  margin-right: 24em;
 }
 footer .addrArea address p {
   margin-bottom: 5px;
