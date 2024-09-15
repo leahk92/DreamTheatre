@@ -2,178 +2,161 @@
 /* https://devfacts.com/media-queries-breakpoints/ */
 
 /* 화면너비 1920px */
-@media (max-width: 1920px) {
-   /* 학교 컴퓨터 : 80% */
-   /* .section01 > .container {
-        width: 80%;
-    } */
+@media screen and (max-width: 1920px) {
+   /* 학교 컴퓨터 */
 }
+
 /* 화면너비 1680px */
-@media (max-width: 1680px) {
-   /* 레노버 : 85% */
-   nav .menu-bar a {
-      font-weight: 400;
-   }
-   .overviewNavi {
-      padding: 1.375em 7.375em;
-      margin-top: 2.125em;
-   }
-   .month-tabs li button {
-      font-size: 1.05rem;
-      padding: 1.4em 1.7em;
-   }
-   .monthNavi .arr img {
-      width: 20px;
-   }
-   .calContent > a {
-      padding: 1.5em 15em;
-   }
-
-   .day-list > a {
-      padding: 1.4em 10em;
-   }
-   .day-list .date p:first-child {
-      width: 45%;
-   }
-   .service {
-      margin: 5.3em auto;
-   }
-
-   #notice .notice-container {
-      margin: 0 auto;
-      padding: 2.875em 6.375em;
-   }
-   .n-text .n-date {
-      font-size: 1.9rem;
-   }
-   .n-text .n-title {
-      font-size: 1.45rem;
-   }
-   .n-list .n-text {
-      width: 95%;
-      padding: 0px 50px;
-   }
-   .n-link img {
-      width: 30px;
-   }
-   .n-text .n-year {
-      margin: 45px 0 47px;
-   }
-   .notice-box .n-list {
-      width: 30%;
-   }
-   .notice-box .n-list a {
-      height: 370px;
-   }
-   /* 푸터 */
-   footer .addrArea address {
-      margin-right: 12.5em;
-   }
+@media screen and (max-width: 1680px) {
+   /* 레노버 */
 }
+
 /* 화면너비 1440px */
-@media (max-width: 1440px) {
-   /* lg그램 : 95% */
+@media screen and (max-width: 1440px) {
+   /* lg그램 */
    /* 헤더 */
    #check:checked ~ nav label .close-btn {
-      top: 10%;
-      font-size: 40px;
+      font-size: 37px;
    }
-   #check:checked ~ nav .menu-bar {
-      padding-top: 15%;
-   }
-   #check:checked ~ nav .menu-bar > li > a {
-      font-size: 25px;
+   #check:checked ~ nav .menu-bars .menu-bar > a {
+      font-size: 1.4rem;
    }
    #check:checked ~ nav .dropdown-menu > ul > li > a {
-      font-size: 20px;
-      font-weight: 300;
+      font-size: 1.1rem;
    }
-   nav .menu-bar a {
+   .menu-bars .menu-bar > a {
       font-size: 1.2rem;
       font-weight: 400;
    }
-   .overviewNavi {
-      padding: 1.375em 4.375em;
-      margin-top: 2.125em;
+   nav .menu-bar .dropdown-menu {
+      width: 11em;
    }
+   .dropdown-menu ul li a {
+      font-size: 1rem;
+   }
+   .main-info button {
+      font-size: 0.9rem;
+   }
+
    .overview-tabs button {
-      font-size: 1.45rem;
-      margin-right: 25px;
+      font-size: 1.3rem;
    }
    .overview-filters button {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
    }
-
-   .monthNavi > h2 {
-      font-size: 1.6rem;
+   .monthNavi > h3 {
+      font-size: 1.7rem;
    }
    .month-tabs li button {
-      font-size: 1.05rem;
-      padding: 1.4em 1.45em;
-   }
-   .monthNavi .arr img {
-      width: 18px;
-   }
-   .pdContent .poster {
-      width: 310px;
-   }
-   .pdContent .poster img {
-      width: 100%;
-      height: 450px;
-   }
-   .pdContent .poster > div {
-      width: 310px;
-      font-weight: 300;
-      background: #000;
-      opacity: 0.8;
-      text-align: center;
-   }
-   .poster > div > p:nth-child(2) {
-      font-size: 1.3rem;
-      font-weight: 400;
-      /* padding: 5px 0 50px; */
-   }
-
-   .calContent > a {
-      padding: 1.5em 9em;
+      font-size: 0.95rem;
    }
    .calContent .date p {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
    }
-   .calContent .date p:first-child {
-      width: 43%;
+   .calContent .playttl > p {
+      font-size: 1.1rem;
+   }
+   .calContent a:hover .playttl p {
+      font-size: 1.05rem;
    }
 
-   .calContent .playttl > p {
-      font-size: 1.25rem;
+   .service li a {
+      font-size: 1.15rem;
    }
-   .calContent .book-btn img {
-      width: 36px;
+   .notice-container h4 {
+      font-size: 2.1rem;
    }
-   .day-list > a {
-      padding: 1.4em 10em;
+   .notice-box .n-list a {
+      height: 335px;
    }
-   .day-list .date p:first-child {
-      width: 45%;
+   .n-text .n-year {
+      font-size: 1.2rem;
    }
-   .service {
-      margin: 5.3em auto;
-   }
-   /* 섹션 2 */
-   #notice .notice-container {
-      padding: 4.875em 6.375em;
+   .n-text .n-date {
+      font-size: 1.65rem;
    }
    .n-text .n-title {
-      font-size: 1.27rem;
+      font-size: 1.2rem;
    }
-   /* 푸터 */
+
    footer .addrArea address {
-      margin-right: 6.5em;
+      font-size: 0.91rem;
+   }
+}
+
+/* 화면너비 1200px */
+@media screen and (max-width: 1200px) {
+   @keyframes zoomOut {
+      0% {
+         background-size: 150%;
+      }
+      100% {
+         background-size: 140%;
+      }
+   }
+   .month-tabs li .arr {
+      display: none;
+   }
+
+   .notice-container h4 {
+      font-size: 1.9rem;
+   }
+   .notice-box .n-list a {
+      height: 300px;
+   }
+   .n-text .n-year {
+      font-size: 1.1rem;
+   }
+   .n-text .n-date {
+      font-size: 1.4rem;
+   }
+   .n-text .n-title {
+      font-size: 1.13rem;
    }
 }
 /* 화면너비 1024px */
 @media (max-width: 1024px) {
+   .n-text .n-date {
+      font-size: 1.35rem;
+   }
 }
+/* 태블릿 사이즈 */
+@media screen and (max-width: 992px) {
+   @keyframes zoomOut {
+      0% {
+         background-size: 170%;
+      }
+      100% {
+         background-size: 160%;
+      }
+   }
+   label {
+      font-size: 1.4rem;
+   }
+   .menu-bars .menu-bar > a {
+      font-size: 1.1rem;
+   }
+   nav img {
+      width: 30px;
+   }
+   .lang a {
+      font-size: 0.8rem;
+   }
+   #check:checked ~ nav .menu-bars {
+      flex-direction: column;
+   }
+   #check:checked ~ nav .menu-bars .menu-bar {
+      width: 100%;
+   }
+   #check:checked ~ nav .dropdown-menu {
+      display: none;
+   }
+}
+
 /* 화면너비 768px */
 @media (max-width: 768px) {
+}
+
+/* 모바일 사이즈 */
+@media screen and (max-width: 600px) {
 }
