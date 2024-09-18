@@ -1,6 +1,11 @@
 /* media query */
 /* https://devfacts.com/media-queries-breakpoints/ */
 
+/* .month-tabs {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+} */
+
 /* 화면너비 1920px */
 @media screen and (max-width: 1920px) {
    /* 학교 컴퓨터 */
@@ -45,10 +50,13 @@
       font-size: 1.1rem;
    }
    .monthNavi > h3 {
-      font-size: 1.7rem;
+      font-size: 1.65rem;
+   }
+   .monthNavi .arr img {
+      width: 17px;
    }
    .month-tabs li button {
-      font-size: 0.95rem;
+      font-size: 1rem;
    }
    .calContent .date p {
       font-size: 1.15rem;
@@ -94,8 +102,23 @@
          background-size: 140%;
       }
    }
-   .month-tabs li .arr {
-      display: none;
+   .overview-tabs button {
+      font-size: 1.2rem;
+   }
+   .overview-filters button {
+      font-size: 1rem;
+   }
+   .monthNavi > h3 {
+      font-size: 1.4rem;
+   }
+   .month-tabs li button {
+      font-size: 0.9rem;
+   }
+   .month-tabs li {
+      height: 60px;
+   }
+   .monthNavi .arr img {
+      width: 13px;
    }
 
    .notice-container h4 {
@@ -113,22 +136,22 @@
    .n-text .n-title {
       font-size: 1.13rem;
    }
-}
-/* 화면너비 1024px */
-@media (max-width: 1024px) {
-   .n-text .n-date {
-      font-size: 1.35rem;
+   footer .info a {
+      vertical-align: baseline;
    }
 }
-/* 태블릿 사이즈 */
+/* 태블릿 992px */
 @media screen and (max-width: 992px) {
    @keyframes zoomOut {
       0% {
-         background-size: 170%;
+         background-size: 200%;
       }
       100% {
-         background-size: 160%;
+         background-size: 190%;
       }
+   }
+   nav .menu-bars {
+      display: none;
    }
    label {
       font-size: 1.4rem;
@@ -151,12 +174,185 @@
    #check:checked ~ nav .dropdown-menu {
       display: none;
    }
+   .monthNavi > h3 {
+      font-size: 1.1rem;
+   }
+   .overview-tabs button {
+      font-size: 1.1rem;
+   }
+   .overview-filters button {
+      font-size: 0.9rem;
+   }
+   .monthNavi {
+      flex-wrap: wrap;
+   }
+   .monthNavi > h3 {
+      width: 100%;
+      padding: 1.2% 0;
+      border-bottom: 1px solid #7e7e7e;
+      font-size: 1.25rem;
+      text-align: center;
+   }
+   .month-tabs {
+      justify-content: center;
+      margin: 0 auto;
+   }
+   .month-tabs li:last-child {
+      border-right: 1px solid #7e7e7e;
+   }
+   .month-tabs li.arr-next,
+   .month-tabs li.arr-prev {
+      display: none;
+   }
+   .month-tabs li button {
+      padding: 0 1.55em;
+   }
+
+   .calContent > a {
+      padding: 1.5em 2em;
+   }
+   .calContent .date p {
+      font-size: 1.1rem;
+   }
+   .calContent .playttl > p {
+      font-size: 1rem;
+   }
+   .calContent a:hover .playttl p {
+      font-size: 1rem;
+   }
+
+   .service li a {
+      font-size: 1.05rem;
+   }
+
+   .n-text .n-date {
+      font-size: 1.35rem;
+   }
+
+   footer .info a {
+      font-size: 0.8rem;
+   }
 }
 
 /* 화면너비 768px */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+   @keyframes zoomOut {
+      0% {
+         background-size: 250%;
+      }
+      100% {
+         background-size: 240%;
+      }
+   }
+   .monthNavi > h3 {
+      font-size: 1.2rem;
+   }
+   .month-tabs li button {
+      font-size: 0.85rem;
+   }
+   .month-tabs li button {
+      padding: 0 1.45em;
+   }
+   .service {
+      width: 70%;
+      margin: 3% auto;
+   }
+   .service ul {
+      flex-wrap: wrap;
+   }
+   .service ul li {
+      flex-basis: 45%;
+      margin: 8% 0;
+   }
+   .service li a {
+      font-size: 1.1rem;
+   }
 }
 
-/* 모바일 사이즈 */
+/* 모바일 600px */
+@media screen and (max-width: 600px) {
+   @keyframes zoomOut {
+      0% {
+         background-size: 330%;
+      }
+      100% {
+         background-size: 320%;
+      }
+   }
+   .overviewNavi {
+      display: block;
+      padding: 0;
+   }
+   .overview-tabs {
+      justify-content: center;
+   }
+   .overview-tabs button {
+      font-size: 1rem;
+   }
+   .overview-filters {
+      justify-content: center;
+      background: #f5f5f5;
+      padding: 1% 0;
+   }
+   .overview-filters button {
+      font-size: 0.8rem;
+   }
+   .month-tabs {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+   }
+   .month-tabs li {
+      height: 55px;
+   }
+   .month-tabs li.july {
+      border-left: 1px solid #7e7e7e;
+   }
+   .month-tabs li button {
+      font-size: 0.8rem;
+   }
+
+   .calContent > a {
+      padding: 1.5em 0.5em;
+   }
+   .calContent .date {
+      width: 30%;
+   }
+   .calContent .playttl {
+      width: 70%;
+   }
+   .calContent .date p {
+      font-size: 1rem;
+   }
+   .calContent .date p:first-child {
+      width: 70%;
+   }
+   .book-btn {
+      display: none;
+   }
+
+   .notice-container h4 {
+      font-size: 1.5rem;
+   }
+   .notice-box {
+      flex-direction: column;
+      align-items: center;
+      margin: 5% 0;
+   }
+   .notice-box .n-list {
+      width: 70%;
+   }
+   .notice-box .n-list a {
+      height: 260px;
+   }
+   .n-text .n-year {
+      font-size: 1rem;
+      margin-top: 10%;
+   }
+   .n-text .n-date {
+      margin: 10% 0 7%;
+   }
+}
+
+/* 화면너비 425px */
 @media screen and (max-width: 600px) {
 }

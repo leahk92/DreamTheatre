@@ -97,22 +97,21 @@ label {
 
 /* 헤더 > 로고 */
 .logo {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 1.8% 0;
+   text-align: center;
+   padding: 1.2% 0;
    border-bottom: 1px solid #ffffff20;
 }
 .logo img {
+   display: inline-block;
+   vertical-align: baseline;
    width: 6em;
-   display: block;
 }
 /* 헤더 > 내비 */
 nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1.7em 3em;
+   padding: 1.3em 3em;
 }
 nav img {
    width: 33px;
@@ -189,9 +188,6 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 
 /* 메인 비주얼 */
-main {
-   /* max-width: 650px; */
-}
 .main-info {
    color: #fff;
    position: absolute;
@@ -265,26 +261,26 @@ main {
 
 .monthNavi {
    display: flex;
-   /* padding: 0 100px; */
    justify-content: space-between;
    border-top: 1px solid #7e7e7e;
 }
 .monthNavi > h3 {
+   margin: 0 auto;
    font-size: 2rem;
    font-weight: 600;
    /* font-family: "Red Hat Display", sans-serif; */
    font-family: "Montserrat", sans-serif;
    align-content: center;
-   margin: 0 auto;
 }
 .monthNavi .arr img {
    width: 22px;
 }
 .month-tabs {
    display: flex;
-   justify-content: space-around;
+   align-items: center;
 }
 .month-tabs li {
+   height: 70px;
    border-right: 1px solid #7e7e7e;
 }
 .month-tabs li:first-child {
@@ -300,7 +296,9 @@ main {
 .month-tabs li button {
    font-size: 1.2rem;
    font-weight: 400;
-   padding: 1.4em 1.6em;
+   padding: 0 1.45em;
+   width: 100%;
+   height: 100%;
 }
 .month-tabs li button:hover {
    background: #ffb701;
@@ -320,8 +318,6 @@ main {
    width: 10%;
 }
 
-.month .move-btns a:last-child {
-}
 .month .move-btns img {
    width: 28px;
 }
@@ -454,7 +450,7 @@ main {
    width: 25%;
    display: flex;
    align-items: center;
-   margin-left: 5em;
+   margin-left: 5%;
 }
 .calContent .date p {
    font-family: "Montserrat", sans-serif;
@@ -465,7 +461,6 @@ main {
 }
 .calContent .date p:first-child {
    width: 55%;
-
    font-weight: 700;
 }
 .calContent .date p:last-child {
@@ -485,7 +480,7 @@ main {
    padding: 0 10px;
 }
 .calContent .book-btn img {
-   width: 20%;
+   width: 18%;
 }
 /* 티켓예매 버튼 */
 .book-btn {
@@ -529,16 +524,13 @@ main {
    display: flex;
    justify-content: center;
 }
-.service ul:last-child {
-}
 .service ul li {
-   margin: 0 1%;
+   margin: 0 4%;
 }
 .service li a {
    display: block;
    text-align: center;
    font-size: 1.3rem;
-   padding: 0 2.2em;
    font-weight: 500;
    color: #000;
 }
@@ -557,14 +549,14 @@ main {
    padding: 4.5% 5.2%;
 }
 .notice-container h4 {
-   font-weight: 500;
+   /font-weight: 500;
    font-size: 2.2rem;
    color: #fff;
 }
 .notice-box {
    display: flex;
    justify-content: space-between;
-   margin: 3em 0em;
+   margin-top: 4.5%;
 }
 .notice-box .n-list {
    width: 30%;
@@ -688,19 +680,21 @@ footer .infoArea {
    border-bottom: 1px solid #000;
 }
 footer .info {
-   width: 90%;
+   width: 100%;
    margin: 0 auto;
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
+   padding: 1.2% 0;
 }
 footer .info li {
-   padding: 1.22em 3em;
+   padding: 0 3.5%;
 }
 footer .info a {
+   font-size: 0.95rem;
    vertical-align: baseline;
-   /* font-weight: 500; */
 }
-footer > .container {
+footer > .ft-container {
    width: 90%;
    margin: 0 auto;
    border-left: 1px solid #000;
@@ -732,7 +726,7 @@ footer .addrArea .link a {
    margin: 0 10px;
 }
 
-footer .container > p {
+footer .ft-container > p {
    margin: 0 50px;
    padding: 2.5% 0;
    border-top: 1px solid #ccc;
