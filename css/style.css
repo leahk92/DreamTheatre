@@ -559,8 +559,123 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    margin: 0 auto 1.25em;
    width: 2.3em;
 }
+
+/* 본문3 */
+/* 인포 */
+#info {
+   width: 100%;
+}
+#info .info_inr {
+   display: flex;
+}
+.info_inr .n_list {
+   width: 85%;
+}
+.info_inr ul {
+   display: flex;
+   justify-content: center;
+}
+.info_inr .n_list li {
+   width: 30%;
+   height: 435px;
+   margin-left: 2%;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   border: 1px solid #dfdfdf;
+   position: relative;
+}
+.info_inr .n_list li:first-child {
+   margin-left: 0;
+}
+.info_inr .notice {
+   padding-top: 84px;
+}
+.info_inr .notice h4 {
+   color: #111;
+   font-weight: 600;
+   font-size: 2.2rem;
+   margin-top: 28px;
+}
+.info_inr .notice > div {
+   padding-top: 17px;
+}
+
+#info .day {
+   padding-bottom: 20px;
+   display: flex;
+   align-items: center;
+   margin: 43px 0px 10px 45px;
+}
+
+#info .day .a {
+   font-family: "Montserrat", sans-serif;
+   font-size: 50px;
+   font-weight: 600;
+   color: #111;
+   margin-right: 10px;
+}
+#info .day .b {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+   line-height: 1em;
+   color: #111;
+}
+
+#info .txt {
+   margin: 0 35px;
+}
+
+#info .txt .cont {
+   font-size: 1.5rem;
+   font-family: "Noto Sans KR";
+   position: relative;
+   padding-top: 60px;
+   padding-left: 15px;
+   font-weight: 300;
+}
+.deco-bar:before {
+   content: "";
+   display: inline-block;
+   width: 200px;
+   height: 1px;
+   background: #dfdfdf;
+   position: absolute;
+   top: 0px;
+   left: 0;
+}
+#info .txt .cont p {
+   color: #111;
+}
+#info .n_btn {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+}
+#info .n_btn img {
+   width: 60px;
+   padding: 17px;
+   background: #ffb701;
+}
+#info .more {
+   position: relative;
+}
+/* .under_bar:before {
+   content: "";
+   display: inline-block;
+   width: 120px;
+   height: 1px;
+   background: #111;
+   position: absolute;
+   top: 81px;
+   left: 43px;
+} */
+
 /* 공지사항 */
-#notice {
+.section03 {
+   padding: 1% 0;
+}
+/* #notice {
    width: 100%;
    background: #222;
 }
@@ -662,50 +777,28 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    bottom: 20px;
    right: 20px;
 }
-#notice .n_btn:hover {
-}
 #notice .n_btn img {
    padding: 18px;
    background: #00203d;
 }
-
-/* #info .n_list li:last-child {width: 200px; border: none; background: #ebebeb; 
-}
-#info li .add {text-align: center; background: #ebebeb; 
-    padding: 40px 0;
-   }
-#info .add a {color: #111; font-size: 28px; font-family: 'Montserrat';
-    font-weight: 300;
-} */
 #notice .more {
    position: relative;
-}
-.under_bar:before {
-   content: "";
-   display: inline-block;
-   width: 120px;
-   height: 1px;
-   background: #111;
-   position: absolute;
-   top: 81px;
-   left: 43px;
-}
+} */
 
 /* 푸터 */
-/* footer {
-    
-} */
+footer {
+   margin-top: 5%;
+}
 footer .infoArea {
    width: 100%;
    border-bottom: 1px solid #000;
 }
 footer .info {
-   width: 100%;
-   margin: 0 auto;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    padding: 1.2% 0;
+   background-color: #222;
 }
 footer .info li {
    padding: 0 3.5%;
@@ -713,6 +806,7 @@ footer .info li {
 footer .info a {
    font-size: 0.95rem;
    vertical-align: baseline;
+   color: #fff;
 }
 footer > .ft-container {
    width: 90%;
