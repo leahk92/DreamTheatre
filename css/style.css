@@ -22,18 +22,8 @@ footer {
    background: url("../image/햄릿.gif") no-repeat center;
    background-size: cover;
    background-position: center;
-   animation: zoomOut 3s ease-in-out forwards;
+}
 
-   /* min-height: 100vh; */
-}
-@keyframes zoomOut {
-   0% {
-      background-size: 120%;
-   }
-   100% {
-      background-size: 110%;
-   }
-}
 /* 헤더 - 햄버거 메뉴 */
 #check {
    z-index: 3;
@@ -97,14 +87,19 @@ label {
 
 /* 헤더 > 로고 */
 .logo {
-   text-align: center;
-   padding: 1.2% 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1.5% 0;
+
    border-bottom: 1px solid #ffffff20;
 }
+.logo > a {
+   display: inline-flex;
+   width: 12rem;
+}
 .logo img {
-   display: inline-block;
-   vertical-align: baseline;
-   width: 6em;
+   width: 100%;
 }
 /* 헤더 > 내비 */
 nav {
@@ -188,6 +183,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 
 /* 메인 비주얼 */
+
 .main-info {
    color: #fff;
    position: absolute;
@@ -197,13 +193,30 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 .main-info h2 {
    font-size: 2.3rem;
    font-weight: 500;
+   opacity: 0;
+   animation: showcontent 1s ease-in-out 1 forwards;
 }
 .main-info p {
    font-size: 1.9rem;
    font-weight: 400;
    font-family: "Montserrat", sans-serif;
    margin: 5px 0 25px;
+   opacity: 0;
+   animation: showcontent 1s ease-in-out 0.3s 1 forwards;
 }
+@keyframes showcontent {
+   from {
+      opacity: 0;
+      transform: translate(0, 100px);
+      filter: blur(33px);
+   }
+   to {
+      opacity: 1;
+      transform: translate(0, 0);
+      filter: blur(0);
+   }
+}
+
 .main-info button {
    background: #fff;
    color: #333;
@@ -213,8 +226,15 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    font-weight: 600;
    position: relative;
    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
+   opacity: 0;
+   animation: fadeInText 2.5s 1.5s ease-out forwards;
 }
-.main-info button img {
+@keyframes fadeInText {
+   100% {
+      opacity: 1;
+   }
+}
+.main-info button > img {
    width: 11px;
    position: absolute;
    top: 50%;
@@ -280,7 +300,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    align-items: center;
 }
 .month-tabs li {
-   height: 70px;
+   height: 75px;
    border-right: 1px solid #7e7e7e;
 }
 .month-tabs li:first-child {
@@ -296,7 +316,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 .month-tabs li button {
    font-size: 1.2rem;
    font-weight: 400;
-   padding: 0 1.45em;
+   padding: 0 1.6em;
    width: 100%;
    height: 100%;
 }
@@ -546,10 +566,10 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 #notice .notice-container {
    margin: 0 auto;
-   padding: 4.5% 5.2%;
+   padding: 4.5% 8.5%;
 }
 .notice-container h4 {
-   /font-weight: 500;
+   font-weight: 500;
    font-size: 2.2rem;
    color: #fff;
 }

@@ -14,6 +14,15 @@
 /* 화면너비 1680px */
 @media screen and (max-width: 1680px) {
    /* 레노버 */
+   .month-tabs li {
+      height: 70px;
+   }
+   .month-tabs li button {
+      padding: 0 1.45em;
+   }
+   #notice .notice-container {
+      padding: 4.5% 5.2%;
+   }
 }
 
 /* 화면너비 1440px */
@@ -90,18 +99,18 @@
    footer .addrArea address {
       font-size: 0.91rem;
    }
+   footer .addrArea {
+      gap: 2%;
+      padding: 4%;
+   }
 }
 
 /* 화면너비 1200px */
 @media screen and (max-width: 1200px) {
-   @keyframes zoomOut {
-      0% {
-         background-size: 150%;
-      }
-      100% {
-         background-size: 140%;
-      }
+   .logo {
+      padding: 2.5% 0;
    }
+
    .overview-tabs button {
       font-size: 1.2rem;
    }
@@ -136,19 +145,20 @@
    .n-text .n-title {
       font-size: 1.13rem;
    }
+   footer .addrArea .link {
+      display: none;
+   }
    footer .info a {
       vertical-align: baseline;
    }
 }
 /* 태블릿 992px */
 @media screen and (max-width: 992px) {
-   @keyframes zoomOut {
-      0% {
-         background-size: 200%;
-      }
-      100% {
-         background-size: 190%;
-      }
+   #landing-wrap {
+      height: 90vh;
+   }
+   .main-info {
+      bottom: 20%;
    }
    nav .menu-bars {
       display: none;
@@ -207,7 +217,12 @@
    .month-tabs li button {
       padding: 0 1.55em;
    }
-
+   .pdContent {
+      padding: 4em 0;
+   }
+   .pdContent .poster {
+      width: 300px;
+   }
    .calContent > a {
       padding: 1.5em 2em;
    }
@@ -225,24 +240,35 @@
       font-size: 1.05rem;
    }
 
+   .notice-container h4 {
+      font-size: 1.65rem;
+   }
+   .notice-box .n-list a {
+      height: 290px;
+   }
    .n-text .n-date {
-      font-size: 1.35rem;
+      font-size: 1.3rem;
+   }
+   .n-text .n-title {
+      font-size: 1.1rem;
    }
 
    footer .info a {
       font-size: 0.8rem;
    }
+   footer .addrArea address {
+      font-size: 0.8rem;
+   }
+   footer .ft-container > p {
+      font-size: 13.5px;
+      margin: 0 25px;
+   }
 }
 
 /* 화면너비 768px */
 @media screen and (max-width: 768px) {
-   @keyframes zoomOut {
-      0% {
-         background-size: 250%;
-      }
-      100% {
-         background-size: 240%;
-      }
+   .logo {
+      padding: 3.5% 0;
    }
    .monthNavi > h3 {
       font-size: 1.2rem;
@@ -253,6 +279,11 @@
    .month-tabs li button {
       padding: 0 1.45em;
    }
+   .vacant {
+      color: #fff;
+      font-size: 1.1rem;
+   }
+
    .service {
       width: 70%;
       margin: 3% auto;
@@ -265,19 +296,53 @@
       margin: 8% 0;
    }
    .service li a {
-      font-size: 1.1rem;
+      font-size: 1rem;
+   }
+   #notice .notice-container {
+      display: flex;
+      padding: 7% 0;
+   }
+   .notice-box {
+      flex-direction: column;
+      /* align-items: center; */
+      margin: 0;
+      height: 850px;
+   }
+   .notice-box .n-list {
+      width: 60%;
+   }
+   .notice-box .n-list a {
+      height: 260px;
+   }
+   .n-text .n-year {
+      font-size: 1rem;
+      margin-top: 10%;
+   }
+   .n-text .n-date {
+      margin: 10% 0 7%;
+   }
+   .n-text .n-title {
+      padding-top: 8%;
    }
 }
 
 /* 모바일 600px */
 @media screen and (max-width: 600px) {
-   @keyframes zoomOut {
-      0% {
-         background-size: 330%;
-      }
-      100% {
-         background-size: 320%;
-      }
+   #landing-wrap {
+      height: 80vh;
+   }
+   .main-info {
+      bottom: 30%;
+      left: 8%;
+   }
+   .main-info h2 {
+      font-size: 1.7rem;
+   }
+   .main-info p {
+      font-size: 1.5rem;
+   }
+   .main-info button {
+      font-size: 0.85rem;
    }
    .overviewNavi {
       display: block;
@@ -310,7 +375,12 @@
    .month-tabs li button {
       font-size: 0.8rem;
    }
-
+   .pdContent {
+      padding: 3em 0;
+   }
+   .pdContent .poster {
+      width: 280px;
+   }
    .calContent > a {
       padding: 1.5em 0.5em;
    }
@@ -330,29 +400,31 @@
       display: none;
    }
 
+   .service li a {
+      font-size: 0.9rem;
+   }
+
    .notice-container h4 {
       font-size: 1.5rem;
-   }
-   .notice-box {
-      flex-direction: column;
-      align-items: center;
-      margin: 5% 0;
-   }
-   .notice-box .n-list {
-      width: 70%;
-   }
-   .notice-box .n-list a {
-      height: 260px;
-   }
-   .n-text .n-year {
-      font-size: 1rem;
-      margin-top: 10%;
-   }
-   .n-text .n-date {
-      margin: 10% 0 7%;
    }
 }
 
 /* 화면너비 425px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
+   #landing-wrap {
+      height: 70vh;
+   }
+   .main-info {
+      bottom: 40%;
+      left: 5%;
+   }
+   .main-info h2 {
+      font-size: 1.4rem;
+   }
+   .main-info p {
+      font-size: 1.3rem;
+   }
+   .main-info button {
+      font-size: 0.65rem;
+   }
 }
