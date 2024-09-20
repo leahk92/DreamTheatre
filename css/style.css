@@ -248,10 +248,12 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 /* 프로덕션 & 캘린더 */
 .overviewNavi {
+   width: 95%;
+   margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0.7% 3%;
+   padding: 0.7% 0;
    margin-top: 2%;
 }
 .overview-tabs {
