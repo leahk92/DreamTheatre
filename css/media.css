@@ -80,7 +80,10 @@
    .service li a {
       font-size: 1.15rem;
    }
-   .notice-container h4 {
+   #info .txt .cont {
+      font-size: 1.35rem;
+   }
+   /* .notice-container h4 {
       font-size: 2.1rem;
    }
    .notice-box .n-list a {
@@ -94,7 +97,7 @@
    }
    .n-text .n-title {
       font-size: 1.2rem;
-   }
+   } */
 
    footer .addrArea address {
       font-size: 0.91rem;
@@ -107,10 +110,6 @@
 
 /* 화면너비 1200px */
 @media screen and (max-width: 1200px) {
-   .logo {
-      padding: 2.5% 0;
-   }
-
    .overview-tabs button {
       font-size: 1.2rem;
    }
@@ -235,60 +234,52 @@
    .calContent a:hover .playttl p {
       font-size: 1rem;
    }
-
+   .service {
+      margin: 10% auto;
+   }
    .service li a {
       font-size: 1.05rem;
    }
 
-   .notice-container h4 {
-      font-size: 1.65rem;
-   }
-   .notice-box .n-list a {
-      height: 270px;
-   }
-   .n-text .n-year {
-      font-size: 0.9rem;
-   }
-   .n-text .n-date {
-      font-size: 1.2rem;
-   }
-   .n-text .n-title {
-      font-size: 1rem;
-   }
-
    /* 인포 */
-   #info {
-      width: 100%;
-   }
 
    #info .info_inr {
       width: 100%;
       flex-direction: column-reverse;
    }
-
+   .info_inr ul {
+      gap: 1.5%;
+   }
    .info_inr .n_list {
       width: 100%;
    }
 
    .info_inr .n_list li {
       width: 31%;
-      margin-left: 2%;
+      margin-left: 0;
    }
 
-   .info_inr .n_list li:first-child {
+   /* .info_inr .n_list li:first-child {
       margin-left: 1.5%;
-   }
+   } */
 
    .info_inr .notice {
-      width: 100%;
       display: flex;
       flex-direction: row-reverse;
       justify-content: flex-end;
-      /* margin-left: -34.5%; */
+      margin: 0;
+   }
+   .info_inr .notice h4 {
+      font-size: 2.05rem;
+      padding: 0 0 0.5em 1em;
    }
    .info_inr .notice {
       padding-top: 0;
    }
+   #info .txt .cont {
+      font-size: 1.25rem;
+   }
+
    footer .info a {
       font-size: 0.8rem;
    }
@@ -303,9 +294,6 @@
 
 /* 화면너비 768px */
 @media screen and (max-width: 768px) {
-   .logo {
-      padding: 3.5% 0;
-   }
    .monthNavi > h3 {
       font-size: 1.2rem;
    }
@@ -322,7 +310,7 @@
 
    .service {
       width: 70%;
-      margin: 3% auto;
+      margin: 5% auto;
    }
    .service ul {
       flex-wrap: wrap;
@@ -332,40 +320,19 @@
       margin: 8% 0;
    }
    .service li a {
-      font-size: 1rem;
-   }
-   #notice .notice-container {
-      display: flex;
-      justify-content: space-around;
-      padding: 7% 0;
-   }
-   .notice-box {
-      flex-direction: column;
-      /* align-items: center; */
-      margin: 0;
-      height: 850px;
-   }
-   .notice-box .n-list {
-      width: 60%;
-   }
-   .notice-box .n-list a {
-      height: 250px;
-   }
-   .n-text .n-year {
-      margin-top: 10%;
-   }
-   .n-text .n-date {
-      margin: 10% 0 7%;
-   }
-   .n-text .n-title {
-      padding-top: 8%;
+      font-size: 1.15rem;
    }
 
    /* 인포 */
-   #info {
-      width: 100%;
+   #info .day {
+      margin: 0 0 0 6%;
    }
-
+   #info .day .a {
+      font-size: 2.5rem;
+   }
+   #info .day .b {
+      font-size: 1.06rem;
+   }
    .info_inr .n_list ul {
       display: block;
    }
@@ -385,20 +352,19 @@
    #info .txt .cont {
       padding-top: 20%;
       padding-left: 15%;
+      border-top: none;
    }
    .n_list .day {
       width: 18%;
    }
-
-   .info_inr .notice {
-      /* margin-left: -30.5%; */
-   }
-
-   .deco-bar:before {
+   .cont-bar:before {
+      content: "";
+      position: absolute;
+      display: inline-block;
       width: 1px;
       height: 167px;
-      top: 24px;
-      left: 0px;
+      top: 20%;
+      left: 0;
       background: #dfdfdf;
    }
 }
@@ -407,6 +373,10 @@
 @media screen and (max-width: 600px) {
    #landing-wrap {
       height: 80vh;
+   }
+
+   .logo > a {
+      width: 10rem;
    }
    .main-info {
       bottom: 30%;
@@ -487,14 +457,14 @@
    }
 
    /* 인포 */
-
    #info {
-      width: 100%;
       margin-top: 0;
    }
-
-   .info_inr .notice {
-      margin-left: -25.5%;
+   #info .day .a {
+      font-size: 2.2rem;
+   }
+   #info .day .b {
+      font-size: 0.9rem;
    }
 }
 
@@ -516,54 +486,47 @@
    .main-info button {
       font-size: 0.65rem;
    }
-}
 
-@media (max-width: 480px) {
+   .service {
+      margin: 8% auto;
+   }
    /* 인포 */
-   .info_inr .notice {
-      margin-left: -20.5%;
+   .info_inr .notice h4 {
+      padding-top: 0.5em;
+      font-size: 1.85rem;
    }
-   #info .day {
-      margin: 19px 0px 10px 19px;
-   }
-
-   #info .day .a {
-      font-size: 47px;
-   }
-   #info .txt .cont {
-      font-size: 23px;
-      padding-left: 18%;
-      padding-top: 21%;
-   }
-   .deco-bar:before {
-      left: 10px;
-   }
-   #info .n_btn img {
-      padding: 14px;
-   }
-}
-/* 화면너비 0~320px */
-@media (max-width: 320px) {
-   /* 인포 */
    .info_inr .n_list li {
       height: 300px;
       flex-direction: column;
+   }
+   #info .day {
+      margin: 9% 0 0 9%;
    }
    #info .txt {
       width: 65%;
    }
    #info .txt .cont {
-      padding-left: 0%;
+      padding: 15% 0 0 3%;
+      font-size: 1.2rem;
+      border-top: 1px solid #333;
    }
-   .deco-bar:before {
-      width: 200px;
-      height: 1px;
+   .cont-bar:before {
+      width: 0;
+      height: 0;
    }
 
-   .info_inr .notice {
-      margin-left: -15.5%;
+   footer .addrArea {
+      flex-direction: column;
+      align-items: flex-start;
    }
-   .info_inr .notice .gbPCMV_ {
-      display: none;
+   footer .addrArea .logo-footer {
+      margin: 5% 0;
+   }
+}
+
+/* 화면너비 0~320px */
+@media screen and (max-width: 320px) {
+   #info .day {
+      margin: 10% 0 0 12%;
    }
 }

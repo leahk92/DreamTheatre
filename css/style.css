@@ -90,8 +90,7 @@ label {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 1.5% 0;
-
+   padding: 1.5rem 0;
    border-bottom: 1px solid #ffffff20;
 }
 .logo > a {
@@ -103,10 +102,12 @@ label {
 }
 /* 헤더 > 내비 */
 nav {
+   width: 90%;
+   margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1.3em 3em;
+   padding: 1.3em 0;
 }
 nav img {
    width: 33px;
@@ -579,30 +580,25 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 .info_inr .n_list li {
    width: 30%;
-   height: 435px;
+   height: 25em;
    margin-left: 2%;
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   border: 1px solid #dfdfdf;
+   border: 1px solid #c0c0c0;
    position: relative;
 }
 .info_inr .n_list li:first-child {
    margin-left: 0;
 }
 .info_inr .notice {
-   padding-top: 84px;
+   padding-top: 5.25em;
 }
 .info_inr .notice h4 {
-   color: #111;
+   color: #222;
    font-weight: 600;
    font-size: 2.2rem;
-   margin-top: 28px;
 }
-.info_inr .notice > div {
-   padding-top: 17px;
-}
-
 #info .day {
    padding-bottom: 20px;
    display: flex;
@@ -629,22 +625,12 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 
 #info .txt .cont {
-   font-size: 1.5rem;
+   font-size: 1.55rem;
    font-family: "Noto Sans KR";
    position: relative;
-   padding-top: 60px;
-   padding-left: 15px;
+   padding-top: 1.75em;
    font-weight: 300;
-}
-.deco-bar:before {
-   content: "";
-   display: inline-block;
-   width: 200px;
-   height: 1px;
-   background: #dfdfdf;
-   position: absolute;
-   top: 0px;
-   left: 0;
+   border-top: 1px solid #c0c0c0;
 }
 #info .txt .cont p {
    color: #111;
@@ -654,25 +640,19 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    bottom: 20px;
    right: 20px;
 }
+#info .n_btn a {
+   display: inline-block;
+   text-align: center;
+   padding: 0.625rem;
+   background: #00203d;
+   /* box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.75); */
+}
 #info .n_btn img {
-   width: 60px;
-   padding: 17px;
-   background: #ffb701;
+   width: 1.5rem;
 }
 #info .more {
    position: relative;
 }
-/* .under_bar:before {
-   content: "";
-   display: inline-block;
-   width: 120px;
-   height: 1px;
-   background: #111;
-   position: absolute;
-   top: 81px;
-   left: 43px;
-} */
-
 /* 공지사항 */
 .section03 {
    padding: 1% 0;
