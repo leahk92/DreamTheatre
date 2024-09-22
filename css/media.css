@@ -153,12 +153,6 @@
 }
 /* 태블릿 992px */
 @media screen and (max-width: 992px) {
-   #landing-wrap {
-      height: 90vh;
-   }
-   .main-info {
-      bottom: 20%;
-   }
    nav .menu-bars {
       display: none;
    }
@@ -372,25 +366,13 @@
 /* 모바일 600px */
 @media screen and (max-width: 600px) {
    #landing-wrap {
-      height: 80vh;
+      height: 90vh;
    }
 
    .logo > a {
       width: 10rem;
    }
-   .main-info {
-      bottom: 30%;
-      left: 8%;
-   }
-   .main-info h2 {
-      font-size: 1.7rem;
-   }
-   .main-info p {
-      font-size: 1.5rem;
-   }
-   .main-info button {
-      font-size: 0.85rem;
-   }
+
    .overviewNavi {
       width: 100%;
       display: block;
@@ -468,23 +450,16 @@
    }
 }
 
-/* 화면너비 425px */
-@media screen and (max-width: 425px) {
-   #landing-wrap {
-      height: 70vh;
-   }
+/* 화면너비 480px */
+@media screen and (max-width: 480px) {
    .main-info {
-      bottom: 40%;
       left: 5%;
    }
    .main-info h2 {
-      font-size: 1.4rem;
+      font-size: 2.15rem;
    }
    .main-info p {
-      font-size: 1.3rem;
-   }
-   .main-info button {
-      font-size: 0.65rem;
+      font-size: 1.6rem;
    }
 
    .service {
@@ -526,6 +501,18 @@
 
 /* 화면너비 0~320px */
 @media screen and (max-width: 320px) {
+   #landing-wrap {
+      height: 70vh;
+   }
+   .main-info h2 {
+      font-size: 1.8rem;
+   }
+   .main-info p {
+      font-size: 1.25rem;
+   }
+   .main-info button {
+      font-size: 0.7rem;
+   }
    #info .day {
       margin: 10% 0 0 12%;
    }
