@@ -71,7 +71,7 @@
       font-size: 1.15rem;
    }
    .calContent .playttl > p {
-      font-size: 1.1rem;
+      font-size: 1.13rem;
    }
    .calContent a:hover .playttl p {
       font-size: 1.05rem;
@@ -83,21 +83,6 @@
    #info .txt .cont {
       font-size: 1.35rem;
    }
-   /* .notice-container h4 {
-      font-size: 2.1rem;
-   }
-   .notice-box .n-list a {
-      height: 335px;
-   }
-   .n-text .n-year {
-      font-size: 1.2rem;
-   }
-   .n-text .n-date {
-      font-size: 1.65rem;
-   }
-   .n-text .n-title {
-      font-size: 1.2rem;
-   } */
 
    footer .addrArea address {
       font-size: 0.91rem;
@@ -129,21 +114,6 @@
       width: 13px;
    }
 
-   .notice-container h4 {
-      font-size: 1.9rem;
-   }
-   .notice-box .n-list a {
-      height: 300px;
-   }
-   .n-text .n-year {
-      font-size: 1.1rem;
-   }
-   .n-text .n-date {
-      font-size: 1.4rem;
-   }
-   .n-text .n-title {
-      font-size: 1.13rem;
-   }
    footer .addrArea .link {
       display: none;
    }
@@ -216,9 +186,7 @@
    .pdContent .poster {
       width: 300px;
    }
-   .calContent > a {
-      padding: 1.5em 2em;
-   }
+
    .calContent .date p {
       font-size: 1.1rem;
    }
@@ -301,6 +269,25 @@
       color: #fff;
       font-size: 1.1rem;
    }
+   .calContent .date {
+      width: 30%;
+   }
+   .calContent .date p:first-child {
+      width: 60%;
+   }
+   .calContent .date p {
+      font-size: 1rem;
+   }
+   .calContent .playttl {
+      width: 60%;
+   }
+
+   .calContent .playttl > p {
+      font-size: 0.9rem;
+   }
+   .calContent a:hover .playttl p {
+      font-size: 0.9rem;
+   }
 
    .service {
       width: 70%;
@@ -321,10 +308,10 @@
    #info .day {
       margin: 0 0 0 6%;
    }
-   #info .day .a {
+   #info .day .day-num {
       font-size: 2.5rem;
    }
-   #info .day .b {
+   #info .day .day-month {
       font-size: 1.06rem;
    }
    .info_inr .n_list ul {
@@ -366,7 +353,10 @@
 /* 모바일 600px */
 @media screen and (max-width: 600px) {
    #landing-wrap {
-      height: 90vh;
+      height: 70vh;
+   }
+   .main-info {
+      left: 5%;
    }
 
    .logo > a {
@@ -411,17 +401,12 @@
    .pdContent .poster {
       width: 280px;
    }
+
    .calContent > a {
-      padding: 1.5em 0.5em;
-   }
-   .calContent .date {
-      width: 30%;
+      padding: 1.2rem 0.2em;
    }
    .calContent .playttl {
-      width: 70%;
-   }
-   .calContent .date p {
-      font-size: 1rem;
+      width: 65%;
    }
    .calContent .date p:first-child {
       width: 70%;
@@ -442,19 +427,16 @@
    #info {
       margin-top: 0;
    }
-   #info .day .a {
+   #info .day .day-num {
       font-size: 2.2rem;
    }
-   #info .day .b {
+   #info .day .day-month {
       font-size: 0.9rem;
    }
 }
 
 /* 화면너비 480px */
 @media screen and (max-width: 480px) {
-   .main-info {
-      left: 5%;
-   }
    .main-info h2 {
       font-size: 2.15rem;
    }
@@ -465,6 +447,17 @@
    .service {
       margin: 8% auto;
    }
+
+   .calContent .date p {
+      font-size: 0.9rem;
+   }
+   .calContent .playttl > p {
+      font-size: 0.85rem;
+   }
+   .calContent a:hover .playttl p {
+      font-size: 0.85rem;
+   }
+
    /* 인포 */
    .info_inr .notice h4 {
       padding-top: 0.5em;
@@ -501,9 +494,6 @@
 
 /* 화면너비 0~320px */
 @media screen and (max-width: 320px) {
-   #landing-wrap {
-      height: 70vh;
-   }
    .main-info h2 {
       font-size: 1.8rem;
    }

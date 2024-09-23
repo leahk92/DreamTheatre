@@ -100,7 +100,7 @@ nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1.3em 0;
+   padding: 1em 0;
 }
 nav img {
    width: 33px;
@@ -180,6 +180,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 header {
    position: relative;
    z-index: 10;
+   /* background: rgba(0, 0, 0, 0.35); */
 }
 .slide {
    width: 100%;
@@ -198,6 +199,7 @@ header {
    object-fit: cover;
    z-index: -10;
 }
+
 .indicators {
    position: absolute;
    top: 50%;
@@ -498,7 +500,7 @@ header {
 .calContent > a {
    display: flex;
    align-items: center;
-   padding: 1.5em 8em;
+   padding: 1.2rem 1rem;
    border-bottom: 1px solid #7e7e7e;
 }
 .calContent .date {
@@ -508,31 +510,39 @@ header {
    margin-left: 5%;
 }
 .calContent .date p {
+   font-size: 1.35rem;
+   font-weight: 600;
    font-family: "Montserrat", sans-serif;
    color: #fff;
-   font-size: 1.35rem;
-   font-weight: 400;
    line-height: 1;
 }
 .calContent .date p:first-child {
    width: 55%;
-   font-weight: 700;
 }
-.calContent .date p:last-child {
-   font-weight: 400;
+.calContent a:hover {
+   background-color: #ffb701;
+   color: #000;
 }
-
+.calContent a:hover .date p {
+   color: #000;
+}
 /* 공연 제목 */
 .calContent .playttl {
    text-align: center;
    width: 55%;
 }
 .calContent .playttl > p {
-   display: inline-block;
-   color: #fff;
    font-size: 1.33rem;
    font-weight: 200;
+   display: inline-block;
+   color: #fff;
    padding: 0 10px;
+}
+.calContent a:hover .playttl p {
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: #000;
+   border-bottom: 1.5px solid #333;
 }
 .calContent .book-btn img {
    width: 18%;
@@ -550,23 +560,6 @@ header {
 }
 .calContent a:hover img.black {
    display: inline-block;
-}
-/* hover */
-.calContent a:hover {
-   background-color: #ffb701;
-   color: #000;
-}
-.calContent a:hover .date p {
-   color: #000;
-}
-.calContent a:hover .date p:last-child {
-   font-weight: 600;
-}
-.calContent a:hover .playttl p {
-   color: #000;
-   font-weight: 600;
-   font-size: 1.3rem;
-   border-bottom: 1.5px solid #333;
 }
 
 /* 본문2 */
@@ -638,14 +631,14 @@ header {
    margin: 43px 0px 10px 45px;
 }
 
-#info .day .a {
+#info .day .day-num {
    font-family: "Montserrat", sans-serif;
    font-size: 50px;
    font-weight: 600;
    color: #111;
    margin-right: 10px;
 }
-#info .day .b {
+#info .day .day-month {
    font-family: "Montserrat", sans-serif;
    font-size: 20px;
    line-height: 1em;
@@ -675,10 +668,10 @@ header {
 #info .n_btn a {
    display: inline-block;
    text-align: center;
-   padding: 0.625rem;
-   background: #222;
-   /* box-shadow: 10px 10px 23px -10px rgba(0, 0, 0, 0.75); */
+   padding: 0.625rem 0.7rem;
+   background: #01182e;
 }
+
 #info .n_btn img {
    width: 1.5rem;
 }
