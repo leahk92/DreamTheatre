@@ -121,6 +121,7 @@
       vertical-align: baseline;
    }
 }
+
 /* 태블릿 992px */
 @media screen and (max-width: 992px) {
    nav .menu-bars {
@@ -187,6 +188,20 @@
       width: 300px;
    }
 
+   .pdContent .poster > .overlay {
+      bottom: -5%;
+   }
+   .poster > .overlay > p:nth-child(2) {
+      font-size: 1.5rem;
+   }
+   .poster > .overlay > p:nth-child(3) {
+      font-size: 1.3rem;
+   }
+   .poster > .overlay > button {
+      font-size: 0.9rem;
+      background: #ffb701;
+   }
+
    .calContent .date p {
       font-size: 1.1rem;
    }
@@ -196,9 +211,7 @@
    .calContent a:hover .playttl p {
       font-size: 1rem;
    }
-   .service {
-      margin: 10% auto;
-   }
+
    .service li a {
       font-size: 1.05rem;
    }
@@ -218,6 +231,7 @@
 
    .info_inr .n_list li {
       width: 31%;
+      height: 23rem;
       margin-left: 0;
    }
 
@@ -260,10 +274,10 @@
       font-size: 1.2rem;
    }
    .month-tabs li button {
-      font-size: 0.85rem;
+      font-size: 0.95rem;
    }
    .month-tabs li button {
-      padding: 0 1.45em;
+      padding: 0 1em;
    }
    .vacant {
       color: #fff;
@@ -392,9 +406,7 @@
    .month-tabs li.july {
       border-left: 1px solid #7e7e7e;
    }
-   .month-tabs li button {
-      font-size: 0.8rem;
-   }
+
    .pdContent {
       padding: 3em 0;
    }
@@ -437,6 +449,9 @@
 
 /* 화면너비 480px */
 @media screen and (max-width: 480px) {
+   #landing-wrap {
+      height: 60vh;
+   }
    .main-info h2 {
       font-size: 2.15rem;
    }
@@ -464,8 +479,13 @@
       font-size: 1.85rem;
    }
    .info_inr .n_list li {
-      height: 300px;
+      height: 18.5rem;
       flex-direction: column;
+      width: 95%;
+      margin: 1.5% auto;
+   }
+   .info_inr .n_list li:first-child {
+      margin-left: 2.5%;
    }
    #info .day {
       margin: 9% 0 0 9%;
@@ -474,7 +494,7 @@
       width: 65%;
    }
    #info .txt .cont {
-      padding: 15% 0 0 3%;
+      padding: 13% 0 0 3%;
       font-size: 1.2rem;
       border-top: 1px solid #333;
    }
@@ -492,6 +512,18 @@
    }
 }
 
+/* 화면너비 380px */
+@media screen and (max-width: 380px) {
+   .main-info h2 {
+      font-size: 2rem;
+   }
+   .main-info p {
+      font-size: 1.4rem;
+   }
+   .overview-filters {
+      display: none;
+   }
+}
 /* 화면너비 0~320px */
 @media screen and (max-width: 320px) {
    .main-info h2 {
@@ -503,6 +535,14 @@
    .main-info button {
       font-size: 0.7rem;
    }
+
+   .month-tabs li button {
+      padding: 0 0.8em;
+   }
+   .month-tabs li button {
+      font-size: 0.9rem;
+   }
+
    #info .day {
       margin: 10% 0 0 12%;
    }

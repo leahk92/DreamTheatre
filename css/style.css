@@ -79,6 +79,7 @@ label {
 }
 
 /* 헤더 > 로고 */
+
 .logo {
    display: flex;
    justify-content: center;
@@ -364,7 +365,7 @@ header {
     color: #fff;
     background-color: #333;
 } */
-.month-tabs li .active {
+.month-tabs li .select {
    color: #fff;
    background-color: #222;
 }
@@ -434,7 +435,6 @@ header {
    color: #fff;
    height: 0;
    width: 100%;
-   /* background: #000; */
    position: absolute;
    left: 0;
    bottom: -5%;
@@ -443,7 +443,7 @@ header {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   padding: 10px 50px;
+   padding: 10px 20px;
    text-align: center;
    font-weight: 300;
    transition: height 0.5s;
@@ -460,23 +460,22 @@ header {
 .poster > .overlay > p:nth-child(2) {
    font-size: 1.7rem;
    font-weight: 600;
-   padding: 50px 0 10px;
+   padding: 2.125em 0 0.625em;
 }
 .poster > .overlay > p:nth-child(3) {
    font-size: 1.5rem;
    font-weight: 300;
    font-family: "Montserrat", sans-serif;
-   /* font-family: "Red Hat Display", sans-serif; */
-   padding-bottom: 30px;
+   padding-bottom: 1.5em;
 }
 .poster > .overlay > button {
-   margin-top: 40px;
-   padding: 15px 55px;
-   border-radius: 0.3em;
-   font-family: "Montserrat", sans-serif;
+   font-size: 1rem;
    letter-spacing: 0.1rem;
    font-weight: 700;
-   font-size: 1rem;
+   margin-top: 2.5em;
+   padding: 0.938em 3.438em;
+   border-radius: 0.3em;
+   font-family: "Montserrat", sans-serif;
    background: #ffb701;
 }
 .poster:hover {
@@ -500,6 +499,7 @@ header {
 .calContent > a {
    display: flex;
    align-items: center;
+   justify-content: flex-start;
    padding: 1.2rem 1rem;
    border-bottom: 1px solid #7e7e7e;
 }
@@ -545,11 +545,12 @@ header {
    border-bottom: 1.5px solid #333;
 }
 .calContent .book-btn img {
-   width: 18%;
+   width: 37%;
 }
 /* 티켓예매 버튼 */
 .book-btn {
-   width: 20%;
+   display: inline-block;
+
    text-align: center;
 }
 .book-btn img.black {
@@ -566,7 +567,7 @@ header {
 /* 주요 서비스 - 아이콘 형식*/
 .service {
    width: 100%;
-   margin: 8% auto;
+   margin: 10% auto;
 }
 .service ul {
    display: flex;
@@ -605,7 +606,7 @@ header {
 }
 .info_inr .n_list li {
    width: 30%;
-   height: 25em;
+   height: 25rem;
    margin-left: 2%;
    display: flex;
    flex-direction: column;
