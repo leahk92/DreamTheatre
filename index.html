@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>드림씨어터</title>
+      <link rel="stylesheet" href="./css/header.css">
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
       <link rel="stylesheet" href="./css/media.css" />
@@ -22,18 +23,20 @@
       <!-- 랜딩 페이지 -->
       <div id="landing-wrap">
          <!-- 헤더 -->
-         <header>
-            <h1 class="logo">
-               <a href="#"><img src="./image/Asset_logo.png" title="드림씨어터 로고" /></a>
-            </h1>
-            <input type="checkbox" id="check" />
+         <header id="hd">
+            <div class="hd_top">
+               <h1 class="logo">
+                  <a href="#"><img src="./image/Asset_logo.png" title="드림씨어터 로고" /></a>
+               </h1>
+            </div>
             <!-- 내비 -->
-            <nav>
-               <!-- 메뉴 -->
+            <input type="checkbox" id="check" />
+            <nav id="nav-menu">
                <label for="check">
                   <i class="fas fa-bars menu-btn"></i>
                   <i class="fas fa-times close-btn"></i>
                </label>
+               <!-- 메뉴 -->
                <ul class="menu-bars">
                   <li class="menu-bar">
                      <a href="#">드림씨어터</a>
@@ -92,7 +95,7 @@
                </ul>
                <!-- 아이콘 바 -->
                <ul class="icon-bar">
-                  <li class="lang"><a href="">ENG</a></li>
+                  <li class="lang"><a href="#">ENG</a></li>
                   <li class="login">
                      <a href="#"><img src="./image/user-white.png" title="로그인" /></a>
                   </li>
@@ -108,13 +111,13 @@
          <main>
             <!-- <div class="img-slider"></div> -->
             <div class="slide active">
-               <img src="./image/햄릿.gif" alt="연극 햄릿(포스터)">
+               <img src="./image/mainVisual/hamelet.gif" alt="연극 햄릿(포스터)">
                <div class="main-info">
                   <h2>연극 <햄릿></h2>
                   <p>2024.10.04(금)-2024.10.05(토)</p>
                   <button>
                      바로가기
-                     <img src="./image/next.png" alt="" />
+                     <img src="./image/next.png" alt="바로가기 화살표 아이콘" />
                   </button>
                </div>   
             </div> 
@@ -125,18 +128,18 @@
                   <p>2024.10.11(금)-2024.10.12(토)</p>
                   <button>
                      바로가기
-                     <img src="./image/next.png" alt="" />
+                     <img src="./image/next.png" alt="바로가기 화살표 아이콘" />
                   </button>
                </div>
             </div>
             <div class="slide">
-               <img src="./image/mainVisual/ballet.jpg" alt="연극 햄릿(포스터)">
+               <img src="./image/mainVisual/phantomOf-100.jpg" alt="뮤지컬 오페라의 유령(포스터)">
                <div class="main-info">
-                  <h2>연극 <3></h2>
-                  <p>2024.10.04(금)-2024.10.06(일)</p>
+                  <h2>뮤지컬 <오페라의 유령></h2>
+                  <p>2024.12.13(금)-2024.12.22(일)</p>
                   <button>
                      바로가기
-                     <img src="./image/next.png" alt="" />
+                     <img src="./image/next.png" alt="바로가기 화살표 아이콘" />
                   </button>
                </div>
             </div>
@@ -253,12 +256,12 @@
                </li>
                <li class="arr-prev">
                   <button id="tab-prev" role="button" class="arr">
-                     <img src="./image/prev.png" alt="이전" />
+                     <img src="./image/prev.png" alt="이전 화살표 아이콘" />
                   </button>
                </li>
                <li class="arr-next">
                   <button id="tab-next" role="button" class="arr">
-                     <img src="./image/next.png" alt="다음" />
+                     <img src="./image/next.png" alt="다음 화살표 아이콘" />
                   </button>
                </li>
             </ul>
@@ -338,8 +341,8 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
-                     <img src="./image/poster/rebecca03.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/rebecca03.jpg" alt="뮤지컬 레베카 포스터" />
                      <div class="overlay">
                         <p>Musical</p>
                         <p>레베카</p>
@@ -356,7 +359,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-02 (토)</p>
                         <p>14:00</p>
@@ -369,7 +372,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-02 (토)</p>
                         <p>19:00</p>
@@ -382,7 +385,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-03 (일)</p>
                         <p>14:00</p>
@@ -395,7 +398,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-03 (일)</p>
                         <p>19:00</p>
@@ -408,7 +411,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-09 (토)</p>
                         <p>14:00</p>
@@ -421,7 +424,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-09 (토)</p>
                         <p>19:00</p>
@@ -434,7 +437,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-10 (일)</p>
                         <p>14:00</p>
@@ -447,7 +450,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>03-10 (일)</p>
                         <p>19:00</p>
@@ -478,8 +481,8 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
-                     <img src="./image/poster/dreamClass04.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/dreamClass04.jpg" alt="드림클래스 포스터" />
                      <div class="overlay">
                         <p>Program</p>
                         <p>드림 클래스</p>
@@ -487,8 +490,8 @@
                         <button>TICKET</button>
                      </div>
                   </a>
-                  <a class="poster" href="">
-                     <img src="./image/poster/TheOriginal04.jpeg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/TheOriginal04.jpeg" alt="김범수 콘서트 포스터" />
                      <div class="overlay">
                         <p>Concert</p>
                         <p>김범수 콘서트<br /><여행, The Original></p>
@@ -505,7 +508,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>04-08 (월)</p>
                         <p>07:30</p>
@@ -518,7 +521,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>04-20 (월)</p>
                         <p>07:30</p>
@@ -531,7 +534,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>04-20 (토)</p>
                         <p>18:00</p>
@@ -562,8 +565,8 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
-                     <img src="./image/poster/leeMoonSae05.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/leeMoonSae05.jpg" alt="이문세 콘서트 포스터" />
                      <div class="overlay">
                         <p>Conert</p>
                         <p>Theatre 이문세</p>
@@ -571,8 +574,8 @@
                         <button>TICKET</button>
                      </div>
                   </a>
-                  <a class="poster" href="">
-                     <img src="./image/poster/romeoJuliet05.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/romeoJuliet05.jpg" alt="발레 로미오와 줄리엣 포스터" />
                      <div class="overlay">
                         <p>Dance</p>
                         <p>매튜 본의<br />'로미오와 줄리엣'</p>
@@ -589,7 +592,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-03 (금)</p>
                         <p>19:30</p>
@@ -602,7 +605,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-04 (토)</p>
                         <p>18:00</p>
@@ -615,7 +618,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-10 (금)</p>
                         <p>19:30</p>
@@ -628,7 +631,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-11 (토)</p>
                         <p>18:00</p>
@@ -641,7 +644,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-17 (금)</p>
                         <p>19:30</p>
@@ -654,7 +657,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-18 (토)</p>
                         <p>18:00</p>
@@ -667,7 +670,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-23 (목)</p>
                         <p>19:30</p>
@@ -680,7 +683,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-24 (금)</p>
                         <p>14:30</p>
@@ -693,7 +696,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-24 (금)</p>
                         <p>19:30</p>
@@ -706,7 +709,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-25 (토)</p>
                         <p>14:00</p>
@@ -719,7 +722,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-25 (토)</p>
                         <p>19:00</p>
@@ -732,7 +735,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>05-26 (일)</p>
                         <p>14:00</p>
@@ -763,8 +766,8 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
-                     <img src="./image/poster/nctWish06.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/nctWish06.jpg" alt="NCT 콘서트 포스터" />
                      <div class="overlay">
                         <p>Concert</p>
                         <p>NCT WISH ： SCHOOL of WISH</p>
@@ -781,7 +784,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>06-01 (토)</p>
                         <p>14:00</p>
@@ -794,8 +797,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>06-01 (토)</p>
                         <p>19:00</p>
@@ -826,8 +828,8 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
-                     <img src="./image/poster/DearEvanHansen07.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/DearEvanHansen07.jpg" alt="뮤지컬 디어 에반 헨슨 포스터" />
                      <div class="overlay">
                         <p>Musical</p>
                         <p>디어 에반 헨슨</p>
@@ -844,7 +846,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-04 (목)</p>
                         <p>19:30</p>
@@ -857,7 +859,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-05 (금)</p>
                         <p>14:30</p>
@@ -870,7 +872,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-05 (금)</p>
                         <p>19:30</p>
@@ -883,7 +885,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-06 (토)</p>
                         <p>14:00</p>
@@ -896,7 +898,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-06 (토)</p>
                         <p>19:00</p>
@@ -909,7 +911,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-07 (일)</p>
                         <p>15:00</p>
@@ -922,7 +924,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-13 (토)</p>
                         <p>14:00</p>
@@ -935,7 +937,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-13 (토)</p>
                         <p>19:00</p>
@@ -948,7 +950,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-14 (일)</p>
                         <p>14:00</p>
@@ -961,7 +963,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-14 (일)</p>
                         <p>19:00</p>
@@ -974,7 +976,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-20 (토)</p>
                         <p>14:00</p>
@@ -987,7 +989,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-20 (토)</p>
                         <p>19:00</p>
@@ -1000,7 +1002,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-21 (일)</p>
                         <p>14:00</p>
@@ -1013,7 +1015,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>07-21 (일)</p>
                         <p>19:00</p>
@@ -1044,8 +1046,8 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
-                     <img src="./image/poster/theMagicStar08.jpg" alt="" />
+                  <a class="poster" href="#">
+                     <img src="./image/poster/theMagicStar08.jpg" alt="더매직스타 콘서트 포스터" />
                      <div class="overlay">
                         <p>Concert</p>
                         <p>더매직스타</p>
@@ -1062,7 +1064,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>08-09 (금)</p>
                         <p>19:30</p>
@@ -1075,7 +1077,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>08-10 (토)</p>
                         <p>14:00</p>
@@ -1088,7 +1090,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>08-10 (토)</p>
                         <p>19:00</p>
@@ -1101,7 +1103,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>08-11 (일)</p>
                         <p>14:00</p>
@@ -1114,7 +1116,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>08-11 (일)</p>
                         <p>18:30</p>
@@ -1145,12 +1147,12 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
+                  <a class="poster" href="#">
                      <em
                         >공연 <br />
                         예정</em
                      >
-                     <img src="./image/poster/jangWoo09.jpeg" alt="" />
+                     <img src="./image/poster/jangWoo09.jpeg" alt="장우영 팬미팅 포스터" />
                      <div class="overlay">
                         <p>Meeting</p>
                         <p>Jang Wooyoung Fan Meeting<br />＜Be Young＞</p>
@@ -1167,7 +1169,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>09-28 (토)</p>
                         <p>18:00</p>
@@ -1180,7 +1182,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>09-29 (일)</p>
                         <p>17:00</p>
@@ -1211,12 +1213,12 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
+                  <a class="poster" href="#">
                      <em
                         >공연 <br />
                         예정</em
                      >
-                     <img src="./image/poster/hades1011.jpg" alt="" />
+                     <img src="./image/poster/hades1011.jpg" alt="뮤지컬 하데스타운 포스터" />
                      <div class="overlay">
                         <p>Musical</p>
                         <p>하데스타운</p>
@@ -1224,12 +1226,12 @@
                         <button>TICKET</button>
                      </div>
                   </a>
-                  <a class="poster" href="">
+                  <a class="poster" href="#">
                      <em
                         >공연 <br />
                         예정</em
                      >
-                     <img src="./image/poster/hamlet10.jpg" alt="" />
+                     <img src="./image/poster/hamlet10.jpg" alt="연극 햄릿 포스터" />
                      <div class="overlay">
                         <p>Theatre</p>
                         <p>햄릿</p>
@@ -1246,7 +1248,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-04 (금)</p>
                         <p>19:30</p>
@@ -1259,7 +1261,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-05 (토)</p>
                         <p>14:00</p>
@@ -1272,7 +1274,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-05 (토)</p>
                         <p>19:00</p>
@@ -1285,7 +1287,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-06 (일)</p>
                         <p>14:00</p>
@@ -1298,7 +1300,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-06 (일)</p>
                         <p>19:00</p>
@@ -1311,7 +1313,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-18 (금)</p>
                         <p>19:30</p>
@@ -1324,7 +1326,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-19 (토)</p>
                         <p>14:00</p>
@@ -1337,7 +1339,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-19 (토)</p>
                         <p>19:00</p>
@@ -1350,7 +1352,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-20 (일)</p>
                         <p>14:00</p>
@@ -1363,7 +1365,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-20 (일)</p>
                         <p>19:00</p>
@@ -1376,7 +1378,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-25 (금)</p>
                         <p>19:30</p>
@@ -1389,7 +1391,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-26 (토)</p>
                         <p>14:00</p>
@@ -1402,7 +1404,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-26 (토)</p>
                         <p>19:00</p>
@@ -1415,7 +1417,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-27 (일)</p>
                         <p>14:00</p>
@@ -1428,7 +1430,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>10-27 (일)</p>
                         <p>19:00</p>
@@ -1459,12 +1461,12 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
+                  <a class="poster" href="#">
                      <em
                         >공연 <br />
                         예정</em
                      >
-                     <img src="./image/poster/hades1011.jpg" alt="" />
+                     <img src="./image/poster/hades1011.jpg" alt="뮤지컬 하데스타운 포스터" />
                      <div class="overlay">
                         <p>Musical</p>
                         <p>하데스타운</p>
@@ -1472,12 +1474,12 @@
                         <button>TICKET</button>
                      </div>
                   </a>
-                  <a class="poster" href="">
+                  <a class="poster" href="#">
                      <em
                         >공연 <br />
                         예정</em
                      >
-                     <img src="./image/poster/kinkyBoots11.jpg" alt="" />
+                     <img src="./image/poster/kinkyBoots11.jpg" alt="뮤지컬 킹키부츠 포스터" />
                      <div class="overlay">
                         <p>Musical</p>
                         <p>킹키부츠</p>
@@ -1494,7 +1496,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-01 (금)</p>
                         <p>19:30</p>
@@ -1507,7 +1509,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-02 (토)</p>
                         <p>14:00</p>
@@ -1520,7 +1522,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-02 (토)</p>
                         <p>19:00</p>
@@ -1533,7 +1535,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-03 (일)</p>
                         <p>14:00</p>
@@ -1546,7 +1548,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-03 (일)</p>
                         <p>19:00</p>
@@ -1559,7 +1561,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-23 (토)</p>
                         <p>14:00</p>
@@ -1572,7 +1574,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-23 (토)</p>
                         <p>19:00</p>
@@ -1585,7 +1587,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-24 (일)</p>
                         <p>14:00</p>
@@ -1598,7 +1600,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-24 (일)</p>
                         <p>19:00</p>
@@ -1611,7 +1613,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-30 (토)</p>
                         <p>14:00</p>
@@ -1624,7 +1626,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>11-30 (토)</p>
                         <p>19:00</p>
@@ -1655,12 +1657,12 @@
                   aria-labelledby="production"
                   hidden
                >
-                  <a class="poster" href="">
+                  <a class="poster" href="#">
                      <em
                         >공연 <br />
                         예정</em
                      >
-                     <img src="./image/poster/kinkyBoots11.jpg" alt="" />
+                     <img src="./image/poster/kinkyBoots11.jpg" alt="뮤지컬 킹키부츠 포스터" />
                      <div class="overlay">
                         <p>Musical</p>
                         <p>킹키부츠</p>
@@ -1677,7 +1679,7 @@
                   aria-labelledby="calendar"
                   hidden
                >
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>12-01 (일)</p>
                         <p>14:00</p>
@@ -1690,7 +1692,7 @@
                         <img class="white" src="./image/ticket-white.png" alt="티켓 아이콘" />
                      </div>
                   </a>
-                  <a href="">
+                  <a href="#">
                      <div class="date">
                         <p>12-01 (일)</p>
                         <p>19:00</p>
@@ -1805,11 +1807,11 @@
       <footer>
          <div class="infoArea">
             <ul class="info">
-               <li><a href="">오시는 길</a></li>
-               <li><a href="">사이트맵</a></li>
-               <li><a href="">이용약관</a></li>
-               <li><a href="">개인정보처리방침</a></li>
-               <li><a href="">영상정보처리기기 운영·관리 방침</a></li>
+               <li><a href="#">오시는 길</a></li>
+               <li><a href="#">사이트맵</a></li>
+               <li><a href="#">이용약관</a></li>
+               <li><a href="#">개인정보처리방침</a></li>
+               <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
             </ul>
          </div>
          <div class="ft-container">
@@ -1848,6 +1850,7 @@
        <script src="./js/production.js"></script>
         <!-- <script src="./js/new.js"></script> -->
       <script src="./js/mainSlide.js"></script>
+      <script src="./js/headerSlide.js"></script>
       <script>
          AOS.init({
             offset: 30, // offset (in px) from the original trigger point

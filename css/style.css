@@ -78,30 +78,55 @@ label {
    color: #fff;
 }
 
-/* 헤더 > 로고 */
+/* 헤더 */
+#hd {
+   z-index: 10;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+#nav-menu.slidedown {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.95);
+   animation: slidedown 0.4s forwards;
+}
+@keyframes slidedown {
+   form {
+      top: -250px;
+   }
+   to {
+      top: 0;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+   }
+}
+#hd .hd_top {
+   width: 100%;
 
-.logo {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 1.5rem 0;
    border-bottom: 1px solid #ffffff20;
 }
+/* 헤더 > 로고 */
+.logo {
+   padding: 25px 0;
+}
 .logo > a {
-   display: inline-flex;
-   width: 12rem;
+   /* width: 100px; */
 }
 .logo img {
-   width: 100%;
+   display: block;
+   width: 200px;
 }
 /* 헤더 > 내비 */
 nav {
-   width: 90%;
-   margin: 0 auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1em 0;
+   padding: 1rem 3rem;
 }
 nav img {
    width: 33px;
@@ -125,6 +150,7 @@ nav .menu-bars {
    font-weight: 400;
    padding-bottom: 2em;
 }
+
 nav .menu-bar .dropdown-menu {
    width: 15em;
    display: none;
@@ -162,6 +188,9 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 .icon-bar li {
    padding: 0 10px;
 }
+.icon-bar li:last-child {
+   padding-right: 0;
+}
 .lang {
    border-radius: 1.5rem;
    border: 1px solid rgba(255, 255, 255, 0.2);
@@ -178,11 +207,6 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 
 /* 메인 비주얼 */
-header {
-   position: relative;
-   z-index: 10;
-   /* background: rgba(0, 0, 0, 0.35); */
-}
 .slide {
    width: 100%;
    height: 100%;
@@ -231,7 +255,10 @@ header {
    font-size: 2.3rem;
    font-weight: 500;
    opacity: 0;
-   animation: showcontent 1s ease-in-out 1 forwards;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.65s;
+   transition: 0s;
 }
 .main-info p {
    font-size: 1.9rem;
@@ -239,35 +266,34 @@ header {
    font-family: "Montserrat", sans-serif;
    margin: 5px 0 25px;
    opacity: 0;
-   animation: showcontent 1s ease-in-out 0.5s 1 forwards;
-}
-@keyframes showcontent {
-   from {
-      opacity: 0;
-      transform: translate(0, 100px);
-      filter: blur(33px);
-   }
-   to {
-      opacity: 1;
-      transform: translate(0, 0);
-      filter: blur(0);
-   }
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.65s;
+   transition: 0s;
 }
 .main-info button {
+   font-size: 1rem;
+   font-weight: 600;
+   color: #333;
    position: relative;
    padding: 0.75em 2.5em 0.75em 1.25em;
    background: #fff;
    border-radius: 15px;
-   color: #333;
    text-align: left;
-   font-size: 1rem;
-   font-weight: 600;
    opacity: 0;
-   animation: fadeInText 2.5s 1.5s ease-out forwards;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.95s;
+   transition: 0s;
 }
-@keyframes fadeInText {
+@keyframes FadeInUp {
+   0% {
+      opacity: 0;
+      transform: translateY(1rem);
+   }
    100% {
       opacity: 1;
+      transform: translateY(0);
    }
 }
 .main-info button > img {
@@ -418,7 +444,7 @@ header {
    left: 0;
    background: #e3333e;
    color: #fff;
-   z-index: 999;
+   z-index: 9;
    font-size: 0.75rem;
    font-weight: 400;
    letter-spacing: 0.1rem;
@@ -447,7 +473,7 @@ header {
    text-align: center;
    font-weight: 300;
    transition: height 0.5s;
-   z-index: 999;
+   z-index: 9;
 }
 
 .poster > .overlay > p:nth-child(1) {
@@ -705,8 +731,8 @@ footer .info a {
 footer > .ft-container {
    width: 90%;
    margin: 0 auto;
-   border-left: 1px solid #000;
-   border-right: 1px solid #000;
+   border-left: 1px solid #7e7e7e;
+   border-right: 1px solid #7e7e7e;
 }
 footer .addrArea {
    display: flex;

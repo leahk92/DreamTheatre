@@ -262,6 +262,9 @@
    footer .addrArea address {
       font-size: 0.8rem;
    }
+   footer > .ft-container {
+      width: 95%;
+   }
    footer .ft-container > p {
       font-size: 13.5px;
       margin: 0 25px;
@@ -270,6 +273,9 @@
 
 /* 화면너비 768px */
 @media screen and (max-width: 768px) {
+   .logo img {
+      width: 180px;
+   }
    .overview-tabs button {
       margin-right: 1em;
    }
@@ -375,13 +381,16 @@
    #landing-wrap {
       height: 70vh;
    }
+   nav {
+      padding: 1rem 2rem;
+   }
    .main-info {
       left: 5%;
    }
 
-   .logo > a {
+   /* .logo > a {
       width: 10rem;
-   }
+   } */
 
    .overviewNavi {
       width: 100%;
@@ -474,6 +483,12 @@
 @media screen and (max-width: 480px) {
    #landing-wrap {
       height: 65vh;
+   }
+   .logo img {
+      width: 160px;
+   }
+   nav {
+      padding: 1rem 1.5rem;
    }
    .main-info {
       bottom: 15%;
