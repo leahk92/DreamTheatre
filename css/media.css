@@ -481,9 +481,6 @@
 
 /* 화면너비 480px */
 @media screen and (max-width: 480px) {
-   #landing-wrap {
-      height: 65vh;
-   }
    .logo img {
       width: 160px;
    }
