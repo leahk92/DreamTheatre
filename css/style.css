@@ -334,10 +334,13 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    display: flex;
 }
 .overview-filters button {
-   margin: 0 1.25em;
-   font-size: 1.3rem;
+   margin: 0 0.9em;
+   font-size: 1.2rem;
    font-weight: 500;
    opacity: 0.6;
+}
+.overview-filters button:first-child {
+   opacity: 1;
 }
 .overview-filters button:hover {
    opacity: 1;
