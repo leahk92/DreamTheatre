@@ -500,11 +500,10 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    margin-bottom: 1.5em;
 }
 .poster > .overlay > button {
-   /* overflow: hidden; */
    font-size: 1rem;
    letter-spacing: 0.1rem;
    font-weight: 700;
-   margin-top: 2.5em;
+   margin-top: 2em;
    padding: 0.938em 3.438em;
    border-radius: 0.3em;
    font-family: "Montserrat", sans-serif;
