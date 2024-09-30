@@ -466,7 +466,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    width: 100%;
    position: absolute;
    left: 0;
-   bottom: -5%;
+   bottom: 0%;
    overflow: hidden;
    display: flex;
    align-items: center;
@@ -478,9 +478,11 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
    transition: height 0.5s;
    z-index: 9;
 }
-
+.poster > .overlay > p {
+   overflow: hidden;
+}
 .poster > .overlay > p:nth-child(1) {
-   padding-bottom: 3px;
+   margin-bottom: 3px;
    font-family: "Montserrat", sans-serif;
    font-weight: 300;
    letter-spacing: 0.15rem;
@@ -489,15 +491,16 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 .poster > .overlay > p:nth-child(2) {
    font-size: 1.7rem;
    font-weight: 600;
-   padding: 2.125em 0 0.625em;
+   margin: 2.125em 0 0.625em;
 }
 .poster > .overlay > p:nth-child(3) {
    font-size: 1.5rem;
    font-weight: 300;
    font-family: "Montserrat", sans-serif;
-   padding-bottom: 1.5em;
+   margin-bottom: 1.5em;
 }
 .poster > .overlay > button {
+   /* overflow: hidden; */
    font-size: 1rem;
    letter-spacing: 0.1rem;
    font-weight: 700;
@@ -509,7 +512,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 .poster:hover {
    border: 1.5px solid #fff;
-   transition: 0.5s;
+   transition: 0.3s;
 }
 .poster:hover img {
    transform: scale(1.1);
@@ -518,7 +521,7 @@ nav .menu-bars .menu-bar:hover .dropdown-menu {
 }
 .poster:hover .overlay {
    height: 100%;
-   transition: 0.5s;
+   transition: 0.3s;
 }
 .poster:hover em {
    display: none;
