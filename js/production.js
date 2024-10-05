@@ -25,7 +25,7 @@ function selectTab(selectedMonth) {
 
 // 초기설정
 function initSet() {
-   const firstTab = monthTab[8]; // 1월 탭을 첫 번째로 설정
+   const firstTab = monthTab[9]; // 10월 탭을 첫 번째로 설정
    const firstPanel = document.getElementById(firstTab.getAttribute("aria-controls")); // 해당 탭에 연결된 패널 선택
 
    // 모든 패널을 숨김 처리
@@ -38,7 +38,7 @@ function initSet() {
    firstPanel.hidden = false;
 
    // 프로덕션 패널을 기본으로 보이기
-   pdPanel[8].hidden = false;
+   pdPanel[9].hidden = false;
 
    // 활성화 탭 색상 표시
    // firstTab.classList.add(SELECT_CLASSNAME);
